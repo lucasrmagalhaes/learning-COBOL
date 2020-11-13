@@ -32,5 +32,7 @@
 - URL: https://launchpad.net/cobcide/+download
 - InstalaÃ§Ã£o: Next, next... finish.
 
-
-
+### Configurando o Ambiente
+- Preferences, atalho: F2
+- Font Size: Alterado para 14.
+- Output Directory: Alterado para o diretório de preferência.
