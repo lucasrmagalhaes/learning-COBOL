@@ -1,7 +1,6 @@
-# Cobol
-## COmmon Business Oriented Language
+# Cobol - COmmon Business Oriented Language
 
-1. Estrutura da Linguagem
+## 1. Estrutura da Linguagem
 
 ### IDE
 - OpenCobolIDE
