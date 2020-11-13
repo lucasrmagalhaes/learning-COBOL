@@ -1,6 +1,8 @@
 # Cobol
 ## COmmon Business Oriented Language
 
+1. Estrutura da Linguagem
+
 ### IDE
 - OpenCobolIDE
 
@@ -69,3 +71,68 @@ Comandos
 
 Colunas de 73 a 80:
 Numeracao interna do COBOL
+
+### Divisoes
+- O COBOL possui 4 divisoes:
+
+Identification Division -> Basico
+Enviroment Division -> Exemplo: Separador decimal nao e o ponto e a virgula.
+Data Division -> Variaveis
+Procedure Division
+
+- Dificilmente um programa nao ira ter as 4.
+
+IDENTIFICATION DIVISION.
+    PROGRAM-ID.     nome-programa.
+    AUTHOR.     autor.
+
+- Nome do programa e obrigatorio.
+- Geralmente o nome da fonte e o nome do programa.
+
+ENVIROMENT DIVISION.
+
+CONFIGURATION SECTION.
+SPECIAL-NAMES.
+    DECIMAL POINT IS COMMA.
+INPUT-OUTPUT SECTION.
+FILE-CONTROL.
+
+- COMMA = Virgula
+- Secao diz que o ponto decimal e virgual no lugar do ponto que e o padrao.
+- Segunda secao e responsavel pela entrada e saida de arquivos.
+
+DATA DIVISION.
+
+FILE SECTION.
+WORKING-STORAGE SECTION.
+LINKAGE SECTION.
+
+- Divisao dos dados.
+- 3 secoes.
+- Primeira: Variaveis que vao se relacionar com arquivos.
+- Segunda: Variaveis abertas/publicas/locais.
+- Terceira: Variaveis usadas para trocar entre programas, um programa chama o outro e na hora que chama passa um valor.valor
+
+PROCEDURE DIVISION.
+
+100-PARAGRACO-A.
+    comando
+    comando
+    comando.
+    200-PARAGRAFO-E.
+        comandos.
+300-PARAGRAFO-I.
+    comandos
+    comandos.
+400-PARAGRAFO-O.
+    comando
+    comando
+    comando.
+    comandos
+    comandos.
+
+- O que o programa deve fazer.
+- Logica vai estar aqui.
+- Secao que da vida ao programa.
+
+- Essas 4 divisoes elas compoem as divisoes basicas do COBOL.
