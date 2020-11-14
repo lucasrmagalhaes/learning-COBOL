@@ -30,11 +30,13 @@
 Linux
 - URL: https://pypi.org/project/OpenCobolIDE/#files
 
-Instação via terminal:
-sudo apt-get update
-sudo apt-get install open-cobol
-cobc -V
-sudo pip3 install OpenCobolIDE --upgrade
+Instalação via terminal:
+<pre>
+# apt-get update
+# apt-get install open-cobol
+# cobc -V
+# pip3 install OpenCobolIDE --upgrade
+</pre>
 
 Windows e Debian
 - URL: https://launchpad.net/cobcide/+download
