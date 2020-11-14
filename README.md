@@ -72,14 +72,13 @@ Colunas de 73 a 80:
 Numeracao interna do COBOL
 
 ### Divisoes
-- O COBOL possui 4 divisoes:
+O COBOL possui 4 divisoes:
+- Identification Division -> Basico
+- Enviroment Division -> Exemplo: Separador decimal nao e o ponto e a virgula.
+- Data Division -> Variaveis
+- Procedure Division
 
-Identification Division -> Basico
-Enviroment Division -> Exemplo: Separador decimal nao e o ponto e a virgula.
-Data Division -> Variaveis
-Procedure Division
-
-- Dificilmente um programa nao ira ter as 4.
+Dificilmente um programa nao ira ter as 4.
 
 IDENTIFICATION DIVISION.
     PROGRAM-ID.     nome-programa.
