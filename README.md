@@ -202,10 +202,10 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       77 WRK-NOME     PIC X(20)  VALUE SPACES. -> Criar/Pegar. Define o nome e tamanho da variável.
+       77 WRK-NOME     PIC X(20)  VALUE SPACES. -> Cria. Define o nome e tamanho da variável.
        PROCEDURE DIVISION.
-          ACCEPT WRK-NOME FROM CONSOLE. -> Receber. Recebe o nome do usuário.
-          DISPLAY 'NOME: ' WRK-NOME(1:3). -> Mostrar. Mostra na tela.
+          ACCEPT WRK-NOME FROM CONSOLE. -> Recebe. Recebe o nome do usuário.
+          DISPLAY 'NOME: ' WRK-NOME(1:3). -> Mostra. Mostra na tela.
           STOP RUN. -> Termina o programa.
 </pre>
 
