@@ -27,9 +27,16 @@
 - URL: https://paiza.io/en
 
 #### OpenCobolIDE
-- Linux
+Linux
 - URL: https://pypi.org/project/OpenCobolIDE/#files
-- Windows e Debian
+
+Instação via terminal:
+sudo apt-get update
+sudo apt-get install open-cobol
+cobc -V
+sudo pip3 install OpenCobolIDE --upgrade
+
+Windows e Debian
 - URL: https://launchpad.net/cobcide/+download
 - Instalação: Next, next... finish.
 
