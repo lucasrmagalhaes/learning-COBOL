@@ -186,3 +186,6 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
           DISPLAY 'HELLO ALURA'.
           STOP RUN.
 </pre>
+
+- DISPLAY - Mostrar o texto.
+- STOP RUN - Terminar o programa.
