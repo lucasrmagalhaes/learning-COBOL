@@ -4,6 +4,9 @@
 
 > Grace Murray Hopper foi almirante e, analista de sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
 
+[Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol")
+[Conhecendo melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
+
 ## 1. Estrutura da Linguagem
 
 #### IDE
@@ -16,28 +19,20 @@
 - Aproveitamento de Código
 - Padrões de Mercado
 
-#### Glot
+#### [Glot](https://glot.io "Glot")
 - Ambiente para trabalhar online.
 - Diversas linguagens disponíveis.
-- URL: https://glot.io
 
-#### Jdoodle
+#### [Jdoodle](https://www.jdoodle.com "Jdoodle")
 - Ambiente para trabalhar online.
 - Permite salvar projetos e ter galerias por linguagem.
-- URL: https://www.jdoodle.com
 
-#### Paiza
+#### [Paiza](https://paiza.io/en "Paiza")
 - Ambiente para trabalhar online.
-- URL: https://paiza.io/en
 
-#### OpenCobolIDE
-Linux
-- URL: https://pypi.org/project/OpenCobolIDE/#files
-- Extensão Visual Studio: Rech Cobol
-
-Windows e Debian
-- URL: https://launchpad.net/cobcide/+download
-- Instalação: Next, next... finish.
+#### [OpenCobolIDE](https://pypi.org/project/OpenCobolIDE/#files "OpenCobolIDE")
+- [Versão - Windows e Debian](https://launchpad.net/cobcide/+download "Windows e Debian") 
+- [Visual Studio: Extensão - Rech Cobol](https://marketplace.visualstudio.com/items?itemName=rechinformatica.rech-editor-cobol "Rech Cobol")
 
 #### Configurando o Ambiente
 - Preferences, atalho: F2
@@ -151,4 +146,25 @@ PROCEDURE DIVISION.
 - Lógica vai estar aqui.
 - Seção que dá vida ao programa.
 
-##### Essas 4 divisões compoem as divisões básicas do COBOL.
+Essas 4 divisões compoem as divisões básicas do COBOL.
+
+##### Pergunta - Executando um Programa COBOL:
+- Atualmente, existem dois ambientes onde podemos executar programas escritos em Cobol: Alta plataforma (Mainframe) e Plataforma Open (Windows, Linux).
+- No Mainframe, além do programa fonte, o que mais precisamos para compilar/executar rotinas em Cobol em modo Batch ?
+
+##### Resposta:
+- Rotinas JCL
+
+##### Explicação:
+- No mainframe, existem dois modos de trabalho: Batch e Online. No Batch, o usuário precisa solicitar (executar) as rotinas, seja em Cobol ou qualquer outra linguagem. Cada execução tem seu controle de acesso, tempo feito pelo JCL.
+
+##### Pergunta - Regras de um Programa COBOL:
+- Na construção de um programa Cobol, quais das regras abaixo precisamos respeitar para executar sem erros?
+
+##### Resposta:
+- Remarks são utilizados para documentar alterações no código fonte.
+- Divisões, Seções e Parágrafos devem iniciar na Área A (colunas 8 a 11).
+
+##### Explicação:
+- O Cobol não utiliza as colunas 1 a 6, portanto as aproveitamos para fazer marcações de alteração. É uma prática comum de mercado.
+- O Cobol tem duas áreas: A (8 a 11) para identificar divisões, seções, parágrafos e B (12 a 72) para comandos.
