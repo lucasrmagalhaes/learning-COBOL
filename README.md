@@ -1,76 +1,80 @@
-# Cobol - COmmon Business Oriented Language
+# COmmon Business Oriented Language
 
 ## 1. Estrutura da Linguagem
 
-### IDE
+#### IDE
 - OpenCobolIDE
 
-### Estrutura do Curso
-- Niveis de Variaveis
-- Comandos de Decisao
-- Comandos de Repeticao
-- Aproveitamento de Codigo
-- Padroes de Mercado
+#### Estrutura do Curso
+- Níveis de Variáveis
+- Comandos de Decisão
+- Comandos de Repetição
+- Aproveitamento de Código
+- Padrões de Mercado
 
-### Glot
+#### Glot
 - Ambiente para trabalhar online.
-- Diversas linguagens disponiveis.
+- Diversas linguagens disponíveis.
 - URL: https://glot.io
 
-### Jdoodle
+#### Jdoodle
 - Ambiente para trabalhar online.
 - Permite salvar projetos e ter galerias por linguagem.
 - URL: https://www.jdoodle.com
 
-### Paiza
+#### Paiza
 - Ambiente para trabalhar online.
 - URL: https://paiza.io/en
 
-### OpenCobolIDE
+#### OpenCobolIDE
 - Linux
 - URL: https://pypi.org/project/OpenCobolIDE/#files
 - Windows e Debian
 - URL: https://launchpad.net/cobcide/+download
-- Instalacao: Next, next... finish.
+- Instalação: Next, next... finish.
 
-### Configurando o Ambiente
+#### Configurando o Ambiente
 - Preferences, atalho: F2
 - Font Size: Alterado para 14.
-- Output Directory: Alterado para o diretorio de preferencia.
+- Output Directory: Alterado para o diretório de preferência.
 
-### Hierarquia de um programa COBOL
+#### Hierarquia de um programa COBOL
+
+<pre>
 1. PROGRAMA COBOL
     1.1 DIVISION
         1.1.1 SECTION
             1.1.1.1 PARAGRAPH
                 1.1.1.1.1 SENTENCE
                     1.1.1.1.1 STATEMENT
+</pre>
 
-- A escrita do COBOL deve obedecer algumas regras de posicionamento:
+#### A escrita do COBOL deve obedecer algumas regras de posicionamento:
 
 ....|....1....|....2....|....3....|....4....|....5....|....6....|....7....|....80
 
-- O que e permitido em cada coluna:
+#### O que é permitido em cada coluna:
 
-Colunas de 1 a 6:
-Area livre - Remarks
+##### Colunas de 1 a 6:
+- Área livre - Remarks
 
-Coluna 7:
-Area de indicacao
-* comentario
-- continuacao de linha
+##### Coluna 7:
+- Área de indicação
+- comentário = *
+- continuação de linha = -
 
-Colunas de 8 a 11:
-Area A
-divisoes, secoes, paragrafos e declaracao de Variaveis
+##### Colunas de 8 a 11:
+- Área A
+- divisões, seções, parágrafos e declaração de variáveis
 
-Colunas de 12 a 72:
-Area B
-Comandos
+##### Colunas de 12 a 72:
+- Área B
+- Comandos
 
-Colunas de 73 a 80:
-Numeracao interna do COBOL
+##### Colunas de 73 a 80:
+- Numeração interna do COBOL
 
+<<<<<<< HEAD
 ### Divisoes
 O COBOL possui 4 divisoes:
 - Identification Division -> Basico
@@ -79,14 +83,28 @@ O COBOL possui 4 divisoes:
 - Procedure Division
 
 Dificilmente um programa nao ira ter as 4.
+=======
+#### Divisões:
+O COBOL possui 4 divisões:
 
+- **Identification Division** -> Básico
+- **Enviroment Division** -> Exemplo: Separador decimal não é o ponto e sim a vírgula.
+- ****Data Division**** -> Variáveis
+- ****Procedure Division****
+
+###### DifIcilmente um programa nao irá ter as 4.
+>>>>>>> 9de0dc8d8aadeceb71d58a7eec1cf5fd0eb81059
+
+<pre>
 IDENTIFICATION DIVISION.
     PROGRAM-ID.     nome-programa.
     AUTHOR.     autor.
+</pre>
 
-- Nome do programa e obrigatorio.
-- Geralmente o nome da fonte e o nome do programa.
+- Nome do programa é obrigatório.
+- Geralmente o nome da fonte é o nome do programa.
 
+<pre>
 ENVIROMENT DIVISION.
 
 CONFIGURATION SECTION.
@@ -94,43 +112,48 @@ SPECIAL-NAMES.
     DECIMAL POINT IS COMMA.
 INPUT-OUTPUT SECTION.
 FILE-CONTROL.
+</pre>
 
 - COMMA = Virgula
-- Secao diz que o ponto decimal e virgual no lugar do ponto que e o padrao.
-- Segunda secao e responsavel pela entrada e saida de arquivos.
+- Seção diz que o ponto decimal é vírgula no lugar do ponto que é o padrão.
+- Segunda seção é responsável pela entrada e saída de arquivos.
 
+<pre>
 DATA DIVISION.
 
 FILE SECTION.
 WORKING-STORAGE SECTION.
 LINKAGE SECTION.
+</pre>
 
 - Divisao dos dados.
-- 3 secoes.
-- Primeira: Variaveis que vao se relacionar com arquivos.
-- Segunda: Variaveis abertas/publicas/locais.
-- Terceira: Variaveis usadas para trocar entre programas, um programa chama o outro e na hora que chama passa um valor.valor
+- 3 seções.
+- Primeira: Variáveis que vão se relacionar com arquivos.
+- Segunda: Variáveis abertas/públicas/locais.
+- Terceira: Variáveis usadas para trocar entre programas, um programa chama o outro e na hora que chama passa um valor.
 
+<pre>
 PROCEDURE DIVISION.
 
-100-PARAGRACO-A.
+100-PARÁGRAFO-A.
     comando
     comando
     comando.
     200-PARAGRAFO-E.
         comandos.
-300-PARAGRAFO-I.
+300-PARÁGRAFO-I.
     comandos
     comandos.
-400-PARAGRAFO-O.
+400-PARÁGRAFO-O.
     comando
     comando
     comando.
     comandos
     comandos.
+</pre>
 
 - O que o programa deve fazer.
-- Logica vai estar aqui.
-- Secao que da vida ao programa.
+- Lógica vai estar aqui.
+- Seção que dá vida ao programa.
 
-- Essas 4 divisoes elas compoem as divisoes basicas do COBOL.
+##### Essas 4 divisões compoem as divisões básicas do COBOL.

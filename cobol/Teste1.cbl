@@ -1,5 +1,5 @@
       ******************************************************************
-      * Author:
+      * Author: Lucas Magalhães
       * Date:
       * Purpose:
       * Tectonics: cobc
