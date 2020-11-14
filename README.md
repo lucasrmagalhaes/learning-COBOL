@@ -1,4 +1,8 @@
-# COmmon Business Oriented Language
+**CO**mmon **B**usiness **O**riented **L**anguage </>
+
+> Linguagem comum orientada a negócios é uma das linguagens de programação mais antigas, pertecendo à segunda geração das linguagens de programação. É muito utilizada em aplicações voltadas para o mundo financeiro, devido à sua precisão e rapidez na aritmética de ponto flutuante.
+
+> Grace Murray Hopper foi almirante e, analista de sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
 
 ## 1. Estrutura da Linguagem
 
@@ -29,14 +33,7 @@
 #### OpenCobolIDE
 Linux
 - URL: https://pypi.org/project/OpenCobolIDE/#files
-
-Instalação via terminal:
-<pre>
-# apt-get update
-# apt-get install open-cobol
-# cobc -V
-# pip3 install OpenCobolIDE --upgrade
-</pre>
+- Extensão Visual Studio: Rech Cobol
 
 Windows e Debian
 - URL: https://launchpad.net/cobcide/+download
