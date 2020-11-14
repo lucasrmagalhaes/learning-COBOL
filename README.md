@@ -5,7 +5,6 @@
 > Grace Murray Hopper foi almirante e, analista de sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
 
 [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol")
-
 [Conhecendo melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
 ## 1. Estrutura da Linguagem
@@ -169,3 +168,21 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 ##### Explicação:
 - O Cobol não utiliza as colunas 1 a 6, portanto as aproveitamos para fazer marcações de alteração. É uma prática comum de mercado.
 - O Cobol tem duas áreas: A (8 a 11) para identificar divisões, seções, parágrafos e B (12 a 72) para comandos.
+
+##### Criando o primeiro programa:
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB01.
+      *****************************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTHOR = LUCAS  LRM
+      * DATA   = XX/XX/XXXX
+      * OBJETIVO: MOSTRAR A STRING HELLO ALURA
+      *****************************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       PROCEDURE DIVISION.
+          DISPLAY 'HELLO ALURA'.
+          STOP RUN.
+</pre>
