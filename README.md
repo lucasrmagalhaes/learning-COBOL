@@ -77,10 +77,10 @@
 #### Divisões:
 O COBOL possui 4 divisões:
 
-**Identification Division** -> Básico
-**Enviroment Division** -> Exemplo: Separador decimal não é o ponto e sim a vírgula.
-****Data Division**** -> Variáveis
-****Procedure Division****
+- **Identification Division** -> Básico
+- **Enviroment Division** -> Exemplo: Separador decimal não é o ponto e sim a vírgula.
+- ****Data Division**** -> Variáveis
+- ****Procedure Division****
 
 ###### DifIcilmente um programa nao irá ter as 4.
 
