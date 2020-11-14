@@ -4,8 +4,8 @@
 
 > Grace Murray Hopper foi almirante e, analista de sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
 
-[Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol")
-[Conhecendo melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
+- [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol")
+- [Conhecendo melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
 ## 1. Estrutura da Linguagem
 
@@ -186,3 +186,37 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
           DISPLAY 'HELLO ALURA'.
           STOP RUN.
 </pre>
+
+- DISPLAY - Mostrar o texto.
+- STOP RUN - Terminar o programa.
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB02.
+      *****************************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTHOR = LUCAS  LRM
+      * DATA   = XX/XX/XXXX
+      * OBJETIVO: RECEBER E IMPRIMIR UMA STRING
+      *****************************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-NOME     PIC X(20)  VALUE SPACES. -> Pegar. Define o nome e tamanho da variável.
+       PROCEDURE DIVISION.
+          ACCEPT WRK-NOME FROM CONSOLE. -> Receber. Recebe o nome do usuário.
+          DISPLAY 'NOME: ' WRK-NOME. -> Mostrar. Mostra na tela.
+          STOP RUN. -> Termina o programa.
+</pre>
+
+- WORKING-STORAGE SECTION -> Declaração das variáveis. Nesse exemplo uma váriavel local.
+- PIC ou PICTURA -> Definir a máscara/tipo que a variável irá ter.
+- WRK -> Padrão que geralmente as empresas utilizam.
+- PIC X(20) -> Tamanho da variável.
+- VALUE SPACES -> Boa prática.
+- ZEROS ou 0 -> Mais utilizado é ZEROS.
+- ACCEPT exemplo FROM CONSOLE -> Nome recebido do Output. FROM CONSOLE é opcional.
+- WRK-NOME(1:3) -> Primeira palavra vai pegar 3 letras/posições.
+- Tipo A: Conteúdo Alfábetico - somente letras. - não aceita.
+- Tipo X: Alfanumérico. Aceita letras, números e símbolos. É o mais indicado.
+- Tipo 9: Números - Geralmente operações matemáticas.
