@@ -341,3 +341,7 @@ $
 , (comma)	
 - This character code is used to display amount values. 
 - Example: PIC ZZZ9,99,99.
+
+## 3. Operadores Aritméticos
+
+PROGCOB05.cob -> Exemplo de soma.
