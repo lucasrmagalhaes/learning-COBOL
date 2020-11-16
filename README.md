@@ -298,8 +298,16 @@ b) __ wrk-mes  pic x(02).
 b) __ wrk-dia  pic x(02).  
 
 ##### Resposta:
-Nivel 01 / b) Nivel 02
+- Nivel 01 / b) Nivel 02
 
-##### Explicação:
+##### Explicação Alternativa Correta:
 - Nível 01 é o menor nível aceito pelo Cobol. Quando for utilizado como variável de grupo, deverá conter abaixo outras variáveis começando pelo nível 02 até 49 . 
 - Se a variável for iniciada com nível 01 e não contiver outras variáveis , torna-se variável simples de um elemento.
+
+##### Explicação Alternativas Incorretas:
+a) Nivel 77 / b) Nivel 88
+- Nível 77 é utilizado no Cobol para declarar variáveis de um elemento (conteúdo) apenas. 
+- Nível 88 é utilizado para valores lógicos. Deve ser associado a uma variável de grupo.
+
+a) Nivel 99 / b) Nivel 100
+- Não existe nível 99 em Cobol. Máximo até 88.
