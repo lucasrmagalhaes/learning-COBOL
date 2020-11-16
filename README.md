@@ -287,3 +287,19 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 </pre>
 
 - Z -> Máscara Z serve para omitir valores zerados.
+
+##### Pergunta - Trabalhando com Variáveis:
+- Em Cobol, as variáveis devem ser iniciadas com um número de nível associado, determinando que o nível superior será responsável (pai) pelo nível inferior. No exemplo abaixo, quais níveis poderiam ser utilizados para criação de um grupo de variáveis?
+
+a) __ wrk-data.
+
+b) __ wrk-ano  pic x(04).  
+b) __ wrk-mes  pic x(02).  
+b) __ wrk-dia  pic x(02).  
+
+##### Resposta:
+Nivel 01 / b) Nivel 02
+
+##### Explicação:
+- Nível 01 é o menor nível aceito pelo Cobol. Quando for utilizado como variável de grupo, deverá conter abaixo outras variáveis começando pelo nível 02 até 49 . 
+- Se a variável for iniciada com nível 01 e não contiver outras variáveis , torna-se variável simples de um elemento.
