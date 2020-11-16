@@ -190,6 +190,8 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - DISPLAY - Mostrar o texto.
 - STOP RUN - Terminar o programa.
 
+##### Variável Nível 77:
+
 <pre>
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOB02.
@@ -220,3 +222,28 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - Tipo A: Conteúdo Alfábetico - somente letras. - não aceita.
 - Tipo X: Alfanumérico. Aceita letras, números e símbolos. É o mais indicado.
 - Tipo 9: Números - Geralmente operações matemáticas.
+
+##### Variável Nível 01:
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB03.
+      **************************************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTHOR = LUCAS  LRM
+      * DATA   = XX/XX/XXXX
+      * OBJETIVO: RECEBER E IMPRIMIR A DATA DO SISTEMA
+      * UTILIZAR VARIAVEIS NIVEL 01.02... (ESTRUTURADA)
+      **************************************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WRK-DATA.
+           02 WRK-ANO PIC 9(04)  VALUE ZEROS.
+           02 WRK-MES PIC 9(02)  VALUE ZEROS.
+           02 WRK-DIA PIC 9(02)  VALUE ZEROS.
+       PROCEDURE DIVISION.
+          ACCEPT WRK-DATA FROM DATE YYYYMMDD.
+          DISPLAY 'DATA ' WRK-DIA ' DE ' WRK-MES ' DE ' WRK-ANO.
+          STOP RUN.
+</pre>
