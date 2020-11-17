@@ -55,11 +55,9 @@ cobc -x -o exemplo.exe exemplo.cbl
 ./exemplo.exe
 </pre>
 
-- -x
-Suporte para criar um executável.
+- -x -> Suporte para criar um executável.
 
-- -o
-É para especificar a saída do nome de arquivo.
+- -o -> É para especificar a saída do nome de arquivo.
 
 #### Configurando o Ambiente
 - Preferences, atalho: F2
