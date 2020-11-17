@@ -33,6 +33,28 @@
 - [Versão - Windows e Debian](https://launchpad.net/cobcide/+download "Windows e Debian") 
 - [Visual Studio: Extensão - Rech Cobol](https://marketplace.visualstudio.com/items?itemName=rechinformatica.rech-editor-cobol "Rech Cobol")
 
+#### Maneira rápida de compilar no Linux:
+
+- Instalações:
+<pre>
+# apt-get install open-cobol
+# apt-get install gedit
+</pre>
+
+- Testando:
+<pre>
+# mkdir cobol
+# cd cobol
+# touch exemplo.cbl
+# gedit exemplo.cbl
+</pre>
+
+- Rodando:
+<pre>
+cobc -x -o exemplo.exe exemplo.cbl
+./exemplo.exe
+</pre>
+
 #### Configurando o Ambiente
 - Preferences, atalho: F2
 - Font Size: Alterado para 14.
