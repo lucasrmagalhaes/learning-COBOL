@@ -290,6 +290,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
       * Definindo o ponto como vírgula.
+           SPECIAL-NAMES.
            DECIMAL-POINT IS COMMA. 
        DATA DIVISION.
        WORKING-STORAGE SECTION.
@@ -300,15 +301,15 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
        77 WRK-SALARIO        PIC 9(06)V99 VALUE ZEROS.
       * Contém os 9 porque caso o número seja 0 é necessário mostrar.
       * 9 irá listar 0. Z irá omitir os zeros.
-       77 WRK-SALARIO-ED     PIC $ZZZ.ZZ9,99
+       77 WRK-SALARIO-ED     PIC $ZZZ.ZZ9,99 VALUE ZEROS.
        PROCEDURE DIVISION.
           ACCEPT WRK-NOME    FROM CONSOLE.
           ACCEPT WRK-SALARIO FROM CONSOLE.
       ************ MOSTRA DADOS
-          DISPLAY 'NOME' WRK-NOME.
+          DISPLAY 'NOME: ' WRK-NOME.
       * Movendo o valor de uma váriavel para outra variável.
           MOVE WRK-SALARIO TO WRK-SALARIO-ED.
-          DISPLAY 'SALARIO' WRK-SALARIO.
+          DISPLAY 'SALARIO: ' WRK-SALARIO-ED.
           STOP RUN.
 </pre>
 
