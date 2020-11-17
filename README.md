@@ -55,6 +55,12 @@ cobc -x -o exemplo.exe exemplo.cbl
 ./exemplo.exe
 </pre>
 
+- -x
+Suporte para criar um executável.
+
+- -o
+É para especificar a saída do nome de arquivo.
+
 #### Configurando o Ambiente
 - Preferences, atalho: F2
 - Font Size: Alterado para 14.
