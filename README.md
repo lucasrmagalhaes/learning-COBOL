@@ -503,3 +503,96 @@ DIVIDE Resultado BY 4 GIVING Resultado
 
 ## 4. Tomando Decisões e Operadores Relacionais
 
+##### Comando IF/ELSE/END-IF
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB07.
+      **************************************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTHOR: LUCAS  LRM
+      * DATA: 18/11/2020
+      * OBJETIVO: RECEBER 02 NOTAS, MEDIA E IMPRIMIR
+      * UTILIZAR OS COMANDOS IF/ELSE/ENDIF
+      **************************************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-NOTA1 PIC 9(02) VALUE ZEROS.
+       77 WRK-NOTA2 PIC 9(02) VALUE ZEROS.
+       77 WRK-MEDIA PIC 9(02) VALUE ZEROS.
+       PROCEDURE DIVISION.
+          ACCEPT WRK-NOTA1.
+          ACCEPT WRK-NOTA2.
+           COMPUTE WRK-MEDIA = (WRK-NOTA1 + WRK-NOTA2) / 2.
+             DISPLAY 'NOTA 1: ' WRK-NOTA1
+             DISPLAY 'NOTA 2: ' WRK-NOTA2
+             DISPLAY 'MEDIA: ' WRK-MEDIA.
+               IF WRK-MEDIA >= 7
+          	     DISPLAY 'SITUACAO: APROVADO'
+          	ELSE
+          	      IF WRK-MEDIA >= 2
+          	      	  DISPLAY 'SITUACAO: RECUPERACAO'
+          	      ELSE 
+          	       DISPLAY 'SITUACAO: REPROVADO'
+               END-IF.
+          DISPLAY 'MEDIA: ' WRK-MEDIA.
+          STOP RUN.
+</pre>
+
+##### Pergunta - Aplicando um Desconto:
+- Considerando as variáveis Valor (valor do produto) e Bandeira (operadora do cartão), quais rotinas são corretas para aplicarmos desconto de 10% quando o valor for maior ou igual a R$1000,00 e bandeira igual a VISA?
+
+##### Resposta:
+<pre>
+IF Valor >= 1000 
+    IF Bandeira = “VISA”
+     COMPUTE Desconto = Valor * 0,10
+</pre>
+
+<pre>
+IF Valor >= 1000 AND Bandeira = “VISA”
+     COMPUTE Desconto = Valor * 0,10
+</pre>
+
+##### Explicação Alternativa Correta:
+- Podemos fazer o teste das condições em dois IFs separados, porém com dependência entre eles.
+- Com o uso do operador AND, as duas condições precisam ser verdadeiras para aplicação do desconto.
+
+##### Comando EVALUETE:
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB08.
+      **************************************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTHOR: LUCAS  LRM
+      * DATA: 18/11/2020
+      * OBJETIVO: RECEBER 02 NOTAS, MEDIA E IMPRIMIR
+      * UTILIZAR OS COMANDOS IF/ELSE/ENDIF
+      **************************************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-NOTA1 PIC 9(02) VALUE ZEROS.
+       77 WRK-NOTA2 PIC 9(02) VALUE ZEROS.
+       77 WRK-MEDIA PIC 9(02) VALUE ZEROS.
+       PROCEDURE DIVISION.
+          ACCEPT WRK-NOTA1.
+          ACCEPT WRK-NOTA2.
+           COMPUTE WRK-MEDIA = (WRK-NOTA1 + WRK-NOTA2) / 2.
+             DISPLAY 'MEDIA: ' WRK-MEDIA.
+      ************* EVALUETE - IF PESADO
+              EVALUATE WRK-MEDIA
+              	WHEN 10
+              	   DISPLAY 'APROVADO + BONUS'
+              	WHEN 7 THRU 10
+              		DISPLAY 'SITUACAO: APROVADO'
+              	WHEN 2 THRU 6
+              		DISPLAY 'RECUPERACAO'
+              	WHEN OTHER
+              		DISPLAY 'REPROVADO'    
+              END-EVALUATE.
+          DISPLAY 'MEDIA: ' WRK-MEDIA.
+          STOP RUN.
+</pre>
