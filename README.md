@@ -500,3 +500,6 @@ DIVIDE Resultado BY 4 GIVING Resultado
            DISPLAY '=============================='
           STOP RUN.
 </pre>
+
+## 4. Tomando Decisões e Operadores Relacionais
+
