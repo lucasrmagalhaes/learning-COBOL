@@ -539,3 +539,22 @@ DIVIDE Resultado BY 4 GIVING Resultado
           DISPLAY 'MEDIA: ' WRK-MEDIA.
           STOP RUN.
 </pre>
+
+##### Pergunta - Aplicando um Desconto:
+- Considerando as variáveis Valor (valor do produto) e Bandeira (operadora do cartão), quais rotinas são corretas para aplicarmos desconto de 10% quando o valor for maior ou igual a R$1000,00 e bandeira igual a VISA?
+
+##### Resposta:
+<pre>
+IF Valor >= 1000 
+    IF Bandeira = “VISA”
+     COMPUTE Desconto = Valor * 0,10
+</pre>
+
+<pre>
+IF Valor >= 1000 AND Bandeira = “VISA”
+     COMPUTE Desconto = Valor * 0,10
+</pre>
+
+##### Explicação Alternativa Correta:
+- Podemos fazer o teste das condições em dois IFs separados, porém com dependência entre eles.
+- Com o uso do operador AND, as duas condições precisam ser verdadeiras para aplicação do desconto.
