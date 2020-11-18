@@ -492,7 +492,7 @@ DIVIDE Resultado BY 4 GIVING Resultado
           DISPLAY '=============================='
           DISPLAY 'NUMERO 2: ' WRK-NUM2.
           DISPLAY '=============================='
-      *************** SUBTRACAO - PARA O SINAL FUNCIONAR É NECESSÁRIO TROCAR A ORDEM DAS VARIAVEIS - NUM 2 - NUM 1
+      *************** SUBTRACAO - PARA FUNCIONAR INVERTER AS VARIAVEIS
           SUBTRACT WRK-NUM2 FROM WRK-NUM1 GIVING WRK-RESUL.
            MOVE WRK-RESUL TO WRK-RESUL-ED.
            DISPLAY 'SUBTRACAO: ' WRK-RESUL.
