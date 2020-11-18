@@ -449,3 +449,15 @@ PROGCOB05.cob -> Exemplo.
            DISPLAY '=============================='
           STOP RUN.
 </pre>
+
+##### Pergunta - Cálculo de média aritmética:
+- Considerando as variáveis N1, N2, N3 e N4 como notas do aluno nos quatro bimestres escolares, qual a sequência correta para calcular sua média na variável <pre>Resultado</pre>?
+
+##### Resposta:
+<pre>
+ADD N1 N2 N3 N4 TO Resultado
+DIVIDE Resultado BY 4 GIVING Resultado
+</pre>
+
+##### Explicação Alternativa Correta:
+- Correto! Primeiro, faremos a soma das quatro variáveis, acumulando o valor na variável Resultado. Na sequência, dividiremos Resultado por 4, retornando o valor para a própria variável Resultado.
