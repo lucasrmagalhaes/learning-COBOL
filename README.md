@@ -864,3 +864,13 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            DISPLAY '-----------------------'.
            DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
+
+##### Pergunta - Aplicando um Desconto:
+- Aprendemos que a codificação usando lógica estruturada é uma exigência nas empresas em geral.
+- Quais das opções abaixo não representa uma vantagem em codificarmos de maneira estruturada ?
+
+##### Resposta:
+Velocidade de execução do programa.
+
+##### Explicação Alternativa Correta:
+- Não há ganho de performance entre a escrita de um programa sem ou com o uso da lógica estrutura, pelo fato do cobol pré-compilar todo o código antes de rodar.
