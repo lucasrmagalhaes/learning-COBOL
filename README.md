@@ -772,10 +772,10 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 <pre>
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOBAUMENTOSALARIAL.
-       ENVIROMENT DIVISION.
+       ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
        SPECIAL-NAMES.
-           DECIMAL-POINT IS COMMA
+           DECIMAL-POINT IS COMMA.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
        77 WRK-NOME           PIC X(30)      VALUE SPACES.
@@ -813,7 +813,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
                    COMPUTE WRK-AUMENTO = WRK-SALARIO * 0,15      
            END-EVALUATE.
                DISPLAY 'AUMENTO SALARIO DE  ' WRK-AUMENTO.
-           STOP RUN.
+               STOP RUN.
 </pre>
 
 ##### Parágrafos e Lógica Estruturada:
