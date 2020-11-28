@@ -724,7 +724,6 @@ IF Valor >= 1000 AND Bandeira = “VISA”
                    DISPLAY 'USUARIO NAO AUTORIZADO'
                END-IF
            END-IF.
-        
            STOP RUN.
 </pre>
 
