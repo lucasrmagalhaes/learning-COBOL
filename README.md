@@ -683,7 +683,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 
                    DISPLAY 'VALOR DO FRETE COM PRODUTO ' WRK-FRETE
                END-IF.
-           STOP RUN.
+               STOP RUN.
 </pre>
 
 ##### Variável Nível 88 - Lógica:
