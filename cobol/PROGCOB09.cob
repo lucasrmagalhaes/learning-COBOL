@@ -43,4 +43,4 @@
 
                    DISPLAY 'VALOR DO FRETE COM PRODUTO ' WRK-FRETE
                END-IF.
-           STOP RUN.
+               STOP RUN.
