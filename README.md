@@ -746,7 +746,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
               DECIMAL-POINT IS COMMA.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       77 WRK-LARGURA      PIC X(03)V99   VALUE ZEROS.
+       77 WRK-LARGURA      PIC 9(03)V99   VALUE ZEROS.
        77 WRK-COMPRIMENTO  PIC 9(03)V99   VALUE ZEROS.
        77 WRK-AREA         PIC 9(03)V99   VALUE ZEROS.
        PROCEDURE DIVISION.
@@ -759,7 +759,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            IF WRK-LARGURA > 0 AND WRK-COMPRIMENTO > 0
                COMPUTE WRK-AREA = (WRK-LARGURA * WRK-COMPRIMENTO)
                DISPLAY '---------------'
-               DISPLAY 'AREA...' WRK-AREA
+               DISPLAY 'AREA: ' WRK-AREA
            ELSE
                DISPLAY 'FALTA INFORMAR ALGO'
            END-IF.
