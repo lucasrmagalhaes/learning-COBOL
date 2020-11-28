@@ -870,7 +870,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 - Quais das opções abaixo não representa uma vantagem em codificarmos de maneira estruturada ?
 
 ##### Resposta:
-Velocidade de execução do programa.
+- Velocidade de execução do programa.
 
 ##### Explicação Alternativa Correta:
 - Não há ganho de performance entre a escrita de um programa sem ou com o uso da lógica estrutura, pelo fato do cobol pré-compilar todo o código antes de rodar.
