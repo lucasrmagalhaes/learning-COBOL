@@ -879,7 +879,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 
 <pre>
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. PROGCOB13.
+       PROGRAM-ID. PROGCOBTEMPODECASAESTRUTURADO.
       *******************************************************
       * AREA DE COMENTARIOS - REMARKS
       * AUTHOR: LUCAS  LRM
