@@ -815,6 +815,8 @@ IF Valor >= 1000 AND Bandeira = “VISA”
                STOP RUN.
 </pre>
 
+## 5. Lógica Estruturada e Uso de Parágrafos
+
 ##### Parágrafos e Lógica Estruturada:
 
 <pre>
@@ -937,6 +939,8 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'TEMPO DE CASA ' WRK-TEMPOCASA ' ANO(S)'.
         	DISPLAY 'AUMENTO DE SALARIO DE ' WRK-AUMENTO.
 </pre>
+
+## 6. Repetições e Aproveitamento de Código
 
 ##### PERFOM TIMES
 
