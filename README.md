@@ -405,7 +405,7 @@ $
 <details>
     <summary>3. Operadores Aritméticos</summary>
 
-###### PROGCOB05.cob -> Exemplo.
+##### PROGCOB05.cob -> Exemplo.
 
 <pre>
        IDENTIFICATION DIVISION.
