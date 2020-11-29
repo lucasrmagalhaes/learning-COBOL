@@ -1096,8 +1096,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
+##### Output:
+
 <pre>
-Output:
 QUANTIDADE DE VENDAS NO DIA: 
 5
 QUANTIDADE DE VENDAS NO DIA: 
