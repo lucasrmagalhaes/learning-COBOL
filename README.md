@@ -7,7 +7,7 @@
 [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol") | [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
 <details>
-    <summary>1. Estrutura da Linguagem</summary>
+    <summary>Estrutura da Linguagem</summary>
     
 #### IDE
 - OpenCobolIDE
@@ -198,7 +198,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 </details>
 
 <details>
-    <summary>2. Comandos Básicos e Variáveis</summary>
+    <summary>Comandos Básicos e Variáveis</summary>
 
 ##### Criando o primeiro programa:
 
@@ -403,7 +403,7 @@ $
 </details>
 
 <details>
-    <summary>3. Operadores Aritméticos</summary>
+    <summary>Operadores Aritméticos</summary>
 
 ##### PROGCOB05.cob -> Exemplo.
 
@@ -511,7 +511,7 @@ DIVIDE Resultado BY 4 GIVING Resultado
 </details>
 
 <details>
-    <summary>4. Tomando Decisões e Operadores Relacionais</summary>
+    <summary>Tomando Decisões e Operadores Relacionais</summary>
 
 ##### Comando IF/ELSE/END-IF
 
@@ -828,7 +828,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 </details>
 
 <details>
-    <summary>5. Lógica Estruturada e Uso de Parágrafos</summary>
+    <summary>Lógica Estruturada e Uso de Parágrafos</summary>
 
 ##### Parágrafos e Lógica Estruturada:
 
@@ -956,7 +956,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 </details>
 
 <details>
-    <summary>6. Repetições e Aproveitamento de Código</summary>
+    <summary>Repetições e Aproveitamento de Código</summary>
 
 ##### PERFOM TIMES
 
