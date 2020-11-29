@@ -984,7 +984,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-###### PERFORM VARYING
+##### PERFORM VARYING
 
 <pre>
        IDENTIFICATION DIVISION.
