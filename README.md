@@ -6,8 +6,9 @@
 
 [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol") e [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
-## 1. Estrutura da Linguagem
-
+<details>
+    <summary>## 1. Estrutura da Linguagem</summary>
+    
 #### IDE
 - OpenCobolIDE
 
@@ -193,6 +194,8 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 ##### Explicação:
 - O Cobol não utiliza as colunas 1 a 6, portanto as aproveitamos para fazer marcações de alteração. É uma prática comum de mercado.
 - O Cobol tem duas áreas: A (8 a 11) para identificar divisões, seções, parágrafos e B (12 a 72) para comandos.
+
+</details>
 
 ## 2. Comandos Básicos e Variáveis
 
