@@ -938,7 +938,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
         	DISPLAY 'AUMENTO DE SALARIO DE ' WRK-AUMENTO.
 </pre>
 
-##### PERFOM Times
+##### PERFOM TIMES
 
 <pre>
        IDENTIFICATION DIVISION.
