@@ -1295,7 +1295,7 @@ END-STRING.
 <details>
     <summary>Trabalhando com Variáveis de Índice</summary>
     
-###### Tabela:
-- MATRIZ | ARRAY | INDICE | TABELA
+##### Tabela:
+- MATRIZ | ARRAY | INDICE | TABELA = Todos significam a mesma coisa.
 
 </details>
