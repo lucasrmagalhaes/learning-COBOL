@@ -1385,6 +1385,9 @@ END-STRING.
        	  MOVE 'OUTUBRO	' 	TO WRK-MES(10).
        	  MOVE 'NOVEMBRO' 	TO WRK-MES(11).
        	  MOVE 'DEZEMBRO' 	TO WRK-MES(12).
+          
+Output:
+DATA 30 DE NOVEMBRO DE 2020
 </pre>
 
 </details>
