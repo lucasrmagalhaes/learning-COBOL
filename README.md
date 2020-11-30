@@ -1253,7 +1253,7 @@ END-STRING.
 
 ### PROGCOBSTRING:
 
-<pre>
+```html
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOBSTRING.
       **********************************************************************
@@ -1288,7 +1288,7 @@ END-STRING.
        END-PERFORM.
        DISPLAY RES "..."
        STOP RUN.
-</pre>
+```
 
 ### PROGCOBSTRING - Output:
 
