@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  **CO**mmon **B**usiness **O**riented **L**anguage
+  <strong>CO</strong>mmon <strong>B</strong>usiness <strong>O</strong>riented <strong>L</strong>anguage
 </p>
 
 > Linguagem comum orientada a negócios é uma das linguagens de programação mais antigas, pertecendo à segunda geração das linguagens de programação. É muito utilizada em aplicações voltadas para o mundo financeiro, devido à sua precisão e rapidez na aritmética de ponto flutuante.
