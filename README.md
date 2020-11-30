@@ -9,15 +9,17 @@
 <details>
     <summary>Estrutura da Linguagem</summary>
     
-#### IDE
+<p>IDE:
 - OpenCobolIDE
+</p>
 
-#### Estrutura do Curso
+<p>Estrutura do Curso:
 - Níveis de Variáveis
 - Comandos de Decisão
 - Comandos de Repetição
 - Aproveitamento de Código
 - Padrões de Mercado
+</p>
 
 #### [Glot](https://glot.io "Glot")
 - Ambiente para trabalhar online.
