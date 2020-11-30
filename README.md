@@ -706,6 +706,8 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 
 ### Variável Nível 88 - Lógica:
 
+#### PROGCOB10
+
 <pre>
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOB10.
@@ -745,7 +747,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            STOP RUN.
 </pre>
 
-### Operadores Relacionais:
+### Operadores Relacionais
+
+#### PROGCOB11
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -784,7 +788,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            STOP RUN.
 </pre>
 
-### Aumento Salarial:
+### Aumento Salarial
+
+#### PROGCOBAUMENTOSALARIAL
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -838,7 +844,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 <details>
     <summary>Lógica Estruturada e Uso de Parágrafos</summary>
 
-### Parágrafos e Lógica Estruturada:
+### Parágrafos e Lógica Estruturada
+
+#### PROGCOB12
 
 <pre>
         IDENTIFICATION DIVISION.
@@ -898,7 +906,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 ##### Explicação Alternativa Correta:
 - Não há ganho de performance entre a escrita de um programa sem ou com o uso da lógica estrutura, pelo fato do cobol pré-compilar todo o código antes de rodar.
 
-### Exercício: Tempo de Casa Estruturado
+### Tempo de Casa Estruturado
+
+#### PROGCOBTEMPODECASAESTRUTURADO
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -966,7 +976,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 <details>
     <summary>Repetições e Aproveitamento de Código</summary>
 
-### PERFOM TIMES
+### Perform TIMES
+
+#### PROGCOB13
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1012,7 +1024,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-### PERFORM VARYING
+### Perform VARYING
+
+#### PROGCOB14
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1058,7 +1072,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-### PERFORM UNTIL
+### Perform UNTIL
+
+#### PROGCOB15
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1104,7 +1120,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-### Output:
+##### PROGCOB15 - Output
 
 <pre>
 QUANTIDADE DE VENDAS NO DIA: 
@@ -1126,7 +1142,9 @@ TOTAL: 00000117.00
 QUANTIDADE DE REGISTROS: 006
 </pre>
 
-### COPY:
+### COPY
+
+#### PROGCOB15
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1172,18 +1190,20 @@ QUANTIDADE DE REGISTROS: 006
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-### Pergunta - Repetindo código com laços:
+### Repetindo Código com Laços
 - Quais são as principais formas de uso do comando PERFORM? 
 - E quais destas podemos utilizar para ler N valores da console até que o valor digitado seja 99?
 
-#### Resposta:
+#### Resposta
 - TIMES, VARYING e UNTIL. Podemos utilizar o UNTIL.
 
-##### Explicação Alternativa Correta:
+##### Explicação da Alternativa Correta
 - TIMES (n vezes), VARYING (N vezes com variável contador) e UNTIL (até que o valor seja igual) são as principais forma de uso do PERFORM. 
 - Para ler infinitamente da console até o valor ser 99 usamos o UNTIL (por exemplo: UNTIL variável = 99).
 
-### Investimento Financeiro:
+### Investimento Financeiro
+
+#### PROGCOBINVESTIMENTOFINANCEIRO
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1234,7 +1254,7 @@ QUANTIDADE DE REGISTROS: 006
        STOP RUN.
 </pre>
 
-### STRING:
+### STRING
 
 - STRING é um comando que serve para concatenar dois ou mais itens em um único, ou alterar o conteúdo de um item.
 - A estrutura do comando, é:
@@ -1247,11 +1267,11 @@ STRING item-1
 END-STRING.
 </pre>
 
-### DELIMITED BY delimitador, ou SIZE, ou SPACE:
+### DELIMITED BY delimitador, ou SIZE, ou SPACE
 - SIZE, todo o conteúdo será considerado.
 - SPACE será considerado somente o conteúdo até o primeiro espaço encontrado.
 
-### PROGCOBSTRING:
+#### PROGCOBSTRING
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1290,7 +1310,7 @@ END-STRING.
        STOP RUN.
 </pre>
 
-### PROGCOBSTRING - Output:
+##### PROGCOBSTRING - Output
 
 <pre>
 001,001,002,003,005,008,013,021,034,055,089,144,233,377,610,987,...
@@ -1301,7 +1321,7 @@ END-STRING.
 <details>
     <summary>Trabalhando com Variáveis de Índice</summary>
     
-### Tabela:
+### Tabela
 - MATRIZ | ARRAY | INDICE | TABELA = Todos significam a mesma coisa.
 
 </details>
