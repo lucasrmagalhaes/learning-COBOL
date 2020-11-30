@@ -6,7 +6,7 @@
 
 [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol") | [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
-<details>
+<details open>
     <summary>Estrutura da Linguagem</summary>
     
 ##### IDE:
@@ -1119,6 +1119,7 @@ QUANTIDADE DE REGISTROS: 006
 </pre>
 
 ##### COPY:
+
 <pre>
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOB15.
