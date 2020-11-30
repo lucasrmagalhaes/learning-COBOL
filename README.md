@@ -6,7 +6,7 @@
 
 [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol") | [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
-// <details open>
+<!-- <details open> -->
 
 <details>
     <summary>Estrutura da Linguagem</summary>
