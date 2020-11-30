@@ -1116,6 +1116,6 @@ QUANTIDADE DE VENDAS NO DIA:
 ==========================================
 TOTAL: 00000117.00
 QUANTIDADE DE REGISTROS: 006
-<pre>
+</pre>
 
 </details>
