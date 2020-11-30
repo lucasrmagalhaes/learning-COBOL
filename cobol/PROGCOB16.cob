@@ -1,41 +1,39 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. PROGCOB15.
-      **********************************************************
-      * AREA DE COMENTARIOS - REMARKS
-      * AUTHOR: LUCAS  LRM
+       PROGRAM-ID. PROGCOB16.
+      **************************************************
+      * AUTOR: LUCAS LRM
       * DATA: 30/11/2020
-      * OBJETIVO: RECEBER AS VARIAVEIS DO ARQUIVO BOOK.cob
-      * UTILIZANDO O COPY
-      **********************************************************
+      **************************************************
+      * OBJETIVO: RECEBER E IMPRIMIR A DATA DO SISTEMA
+      * UTILIZAR: VARIAVEL TIPO TABELA - OCCURS
+      **************************************************
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-      ************************** COPY geralmente utilizado para padronização das variáveis.
-      ************************** Importando o conteúdo das variáveis do arquivo "BOOK.cob" - Include.
-       		COPY 'BOOK.cob'.
-       
+       01 WRK-MESES.
+           03 WRK-MES 	PIC X(09)  OCCURS 12 TIMES.
+       01 WRK-DATASYS.
+           02 ANOSYS 	PIC 9(04)  VALUE ZEROS.
+           02 MESSYS 	PIC 9(02)  VALUE ZEROS.
+           02 DIASYS 	PIC 9(02)  VALUE ZEROS.
+           
        PROCEDURE DIVISION.
-       0001-PRINCIPAL.
-       		PERFORM 0100-INICIALIZAR.
-       		IF WRK-VENDAS > 0 
-        		PERFORM 0200-PROCESSAR UNTIL WRK-VENDAS = 0
-        	END-IF.
-        	PERFORM 0300-FINALIZAR
-        	
-        	STOP RUN.
-       
-       0100-INICIALIZAR.
-       	       DISPLAY 'QUANTIDADE DE VENDAS NO DIA: '. 
-       	       ACCEPT WRK-VENDAS.
-       
-       0200-PROCESSAR.
-               ADD 1 TO WRK-QT.
-               ADD WRK-VENDAS TO WRK-ACUM.
-               PERFORM 0100-INICIALIZAR.
-               
-       
-       0300-FINALIZAR.
-       		DISPLAY '=========================================='
-       		DISPLAY 'TOTAL: ' WRK-ACUM.
-       		DISPLAY 'QUANTIDADE DE REGISTROS: ' WRK-QT.
-       		DISPLAY 'FINAL DE PROCESSAMENTO'.
+          ACCEPT WRK-DATASYS FROM DATE YYYYMMDD.
+          	PERFORM 0400-MONTAMES.
+          DISPLAY 'DATA ' DIASYS ' DE ' WRK-MES(MESSYS) 'DE ' ANOSYS.
+          
+          STOP RUN.
+          
+       0400-MONTAMES.
+       	  MOVE 'JANEIRO	' 	TO WRK-MES(01).
+       	  MOVE 'FEVEIRO	' 	TO WRK-MES(02).
+       	  MOVE 'MARCO	' 	TO WRK-MES(03).
+       	  MOVE 'ABRIL	' 	TO WRK-MES(04).
+       	  MOVE 'MAIO	' 	TO WRK-MES(05).
+       	  MOVE 'JUNHO	' 	TO WRK-MES(06).
+       	  MOVE 'JULHO	' 	TO WRK-MES(07).
+       	  MOVE 'AGOSTO	' 	TO WRK-MES(08).
+       	  MOVE 'SETEMBRO' 	TO WRK-MES(09).
+       	  MOVE 'OUTUBRO	' 	TO WRK-MES(10).
+       	  MOVE 'NOVEMBRO' 	TO WRK-MES(11).
+       	  MOVE 'DEZEMBRO' 	TO WRK-MES(12).
