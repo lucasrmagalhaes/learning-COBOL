@@ -1166,4 +1166,15 @@ QUANTIDADE DE REGISTROS: 006
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
+##### Pergunta - Repetindo código com laços:
+- Quais são as principais formas de uso do comando PERFORM? 
+- E quais destas podemos utilizar para ler N valores da console até que o valor digitado seja 99?
+
+##### Resposta:
+- TIMES, VARYING e UNTIL. Podemos utilizar o UNTIL.
+
+##### Explicação Alternativa Correta:
+- TIMES (n vezes), VARYING (N vezes com variável contador) e UNTIL (até que o valor seja igual) são as principais forma de uso do PERFORM. 
+- Para ler infinitamente da console até o valor ser 99 usamos o UNTIL (por exemplo: UNTIL variável = 99).
+
 </details>
