@@ -17,7 +17,7 @@
 - [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol")
 - [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
-### IDE:
+### IDE
 - OpenCobolIDE
 
 ### Estrutura do Curso
@@ -88,25 +88,25 @@ cobc -x -o exemplo.exe exemplo.cbl
 
 ....|....1....|....2....|....3....|....4....|....5....|....6....|....7....|....80
 
-### O que é permitido em cada coluna:
+### O que é permitido em cada coluna
 
-#### Colunas de 1 a 6:
+#### Colunas de 1 a 6
 - Área livre - Remarks
 
-#### Coluna 7:
+#### Coluna 7
 - Área de indicação
 - comentário = *
 - continuação de linha = -
 
-#### Colunas de 8 a 11:
+#### Colunas de 8 a 11
 - Área A
 - divisões, seções, parágrafos e declaração de variáveis
 
-#### Colunas de 12 a 72:
+#### Colunas de 12 a 72
 - Área B
 - Comandos
 
-#### Colunas de 73 a 80:
+#### Colunas de 73 a 80
 - Numeração interna do COBOL
 
 ### Divisões
@@ -182,24 +182,24 @@ PROCEDURE DIVISION.
 
 Essas 4 divisões compoem as divisões básicas do COBOL.
 
-### Pergunta - Executando um Programa COBOL:
+### Pergunta - Executando um Programa COBOL
 - Atualmente, existem dois ambientes onde podemos executar programas escritos em Cobol: Alta plataforma (Mainframe) e Plataforma Open (Windows, Linux).
 - No Mainframe, além do programa fonte, o que mais precisamos para compilar/executar rotinas em Cobol em modo Batch ?
 
-#### Resposta:
+#### Resposta
 - Rotinas JCL
 
-##### Explicação:
+##### Explicação
 - No mainframe, existem dois modos de trabalho: Batch e Online. No Batch, o usuário precisa solicitar (executar) as rotinas, seja em Cobol ou qualquer outra linguagem. Cada execução tem seu controle de acesso, tempo feito pelo JCL.
 
-### Pergunta - Regras de um Programa COBOL:
+### Pergunta - Regras de um Programa COBOL
 - Na construção de um programa Cobol, quais das regras abaixo precisamos respeitar para executar sem erros?
 
-#### Resposta:
+#### Resposta
 - Remarks são utilizados para documentar alterações no código fonte.
 - Divisões, Seções e Parágrafos devem iniciar na Área A (colunas 8 a 11).
 
-##### Explicação:
+##### Explicação
 - O Cobol não utiliza as colunas 1 a 6, portanto as aproveitamos para fazer marcações de alteração. É uma prática comum de mercado.
 - O Cobol tem duas áreas: A (8 a 11) para identificar divisões, seções, parágrafos e B (12 a 72) para comandos.
 
@@ -208,7 +208,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 <details>
     <summary>Comandos Básicos e Variáveis</summary>
 
-### Criando o primeiro programa:
+### Criando o primeiro programa
+
+#### PROGCOB01
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -229,7 +231,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - DISPLAY - Mostrar o texto.
 - STOP RUN - Terminar o programa.
 
-### Variável Nível 77:
+### Variável Nível 77
+
+#### PROGCOB02
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -262,7 +266,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - Tipo X: Alfanumérico. Aceita letras, números e símbolos. É o mais indicado.
 - Tipo 9: Números - Geralmente operações matemáticas.
 
-### Variável Nível 01:
+### Variável Nível 01
+
+#### PROGCOB03
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -287,7 +293,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
           STOP RUN.
 </pre>
 
-### Vírgula e Máscara de Edição:
+### Vírgula e Máscara de Edição
+
+#### PROGCOB04
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -381,7 +389,9 @@ $
 - This character code is used to display amount values. 
 - Example: PIC ZZZ9,99,99.
 
-### CPF:
+### CPF
+
+#### PROGCOBCPF
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -413,7 +423,9 @@ $
 <details>
     <summary>Operadores Aritméticos</summary>
 
-### PROGCOB05.cob -> Exemplo.
+### Testando os Operadores Aritméticos
+
+#### PROGCOB05
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -465,21 +477,22 @@ $
           STOP RUN.
 </pre>
 
-### Pergunta - Cálculo de média aritmética:
+### Pergunta - Cálculo de média aritmética
 - Considerando as variáveis N1, N2, N3 e N4 como notas do aluno nos quatro bimestres escolares, qual a sequência correta para calcular sua média na variável Resultado?
 
-#### Resposta:
+#### Resposta
 <pre>
 ADD N1 N2 N3 N4 TO Resultado
 DIVIDE Resultado BY 4 GIVING Resultado
 </pre>
 
-##### Explicação Alternativa Correta:
+##### Explicação da Alternativa Correta
 - Correto! Primeiro, faremos a soma das quatro variáveis, acumulando o valor na variável Resultado. 
 - Na sequência, dividiremos Resultado por 4, retornando o valor para a própria variável Resultado.
 
 ### Valores Positivos e Negativos
-- Exemplo: PROGCOB06.cbl
+
+#### PROGCOB06
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -523,6 +536,8 @@ DIVIDE Resultado BY 4 GIVING Resultado
 
 ### Comando IF/ELSE/END-IF
 
+#### PROGCOB07
+
 <pre>
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOB07.
@@ -558,10 +573,10 @@ DIVIDE Resultado BY 4 GIVING Resultado
           STOP RUN.
 </pre>
 
-### Pergunta - Aplicando um Desconto:
+### Pergunta - Aplicando um Desconto
 - Considerando as variáveis Valor (valor do produto) e Bandeira (operadora do cartão), quais rotinas são corretas para aplicarmos desconto de 10% quando o valor for maior ou igual a R$1000,00 e bandeira igual a VISA?
 
-#### Resposta:
+#### Resposta
 <pre>
 IF Valor >= 1000 
     IF Bandeira = “VISA”
@@ -573,11 +588,13 @@ IF Valor >= 1000 AND Bandeira = “VISA”
      COMPUTE Desconto = Valor * 0,10
 </pre>
 
-##### Explicação Alternativa Correta:
+##### Explicação da Alternativa Correta
 - Podemos fazer o teste das condições em dois IFs separados, porém com dependência entre eles.
 - Com o uso do operador AND, as duas condições precisam ser verdadeiras para aplicação do desconto.
 
-### Comando EVALUETE:
+### Comando EVALUETE
+
+#### PROGCOB08
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -615,7 +632,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
           STOP RUN.
 </pre>
 
-### Comparando Valores:
+### Comparando Valores
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -704,7 +721,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
                STOP RUN.
 </pre>
 
-### Variável Nível 88 - Lógica:
+### Variável Nível 88 - Lógica
 
 #### PROGCOB10
 
