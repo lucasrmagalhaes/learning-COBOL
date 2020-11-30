@@ -109,15 +109,15 @@ cobc -x -o exemplo.exe exemplo.cbl
 #### Colunas de 73 a 80:
 - Numeração interna do COBOL
 
-### Divisões:
-- O COBOL possui 4 divisões:
+### Divisões
 
-- **Identification Division** -> Básico
-- **Enviroment Division** -> Exemplo: Separador decimal não é o ponto e sim a vírgula.
-- ****Data Division**** -> Variáveis
-- ****Procedure Division****
+#### Possui 4 divisões
 
-### DifIcilmente um programa nao irá ter as 4.
+- Identification Division -> Básico
+- Enviroment Division -> Exemplo: Separador decimal não é o ponto e sim a vírgula.
+- Data Division -> Variáveis
+- Procedure Division
+- Difícilmente um programa nao irá ter as 4.
 
 <pre>
 IDENTIFICATION DIVISION.
@@ -208,7 +208,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 <details>
     <summary>Comandos Básicos e Variáveis</summary>
 
-##### Criando o primeiro programa:
+### Criando o primeiro programa:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -229,7 +229,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - DISPLAY - Mostrar o texto.
 - STOP RUN - Terminar o programa.
 
-##### Variável Nível 77:
+### Variável Nível 77:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -262,7 +262,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - Tipo X: Alfanumérico. Aceita letras, números e símbolos. É o mais indicado.
 - Tipo 9: Números - Geralmente operações matemáticas.
 
-##### Variável Nível 01:
+### Variável Nível 01:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -287,7 +287,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
           STOP RUN.
 </pre>
 
-##### Vírgula e Máscara de Edição:
+### Vírgula e Máscara de Edição:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -327,7 +327,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 
 - Z -> Máscara Z serve para omitir valores zerados.
 
-##### Pergunta - Trabalhando com Variáveis:
+### Pergunta - Trabalhando com Variáveis:
 - Em Cobol, as variáveis devem ser iniciadas com um número de nível associado, determinando que o nível superior será responsável (pai) pelo nível inferior. No exemplo abaixo, quais níveis poderiam ser utilizados para criação de um grupo de variáveis?
 
 a) __ wrk-data.
@@ -336,7 +336,7 @@ b) __ wrk-ano  pic x(04).
 b) __ wrk-mes  pic x(02).  
 b) __ wrk-dia  pic x(02).  
 
-##### Resposta:
+#### Resposta:
 - Nivel 01 / b) Nivel 02
 
 ##### Explicação Alternativa Correta:
@@ -351,7 +351,7 @@ a) Nivel 77 / b) Nivel 88
 a) Nivel 99 / b) Nivel 100
 - Não existe nível 99 em Cobol. Máximo até 88.
 
-##### Máscaras de Edição:
+### Máscaras de Edição:
 
 Z	
 - This character can be used in the place of 9, whenever you want to display the value to spool/report. It replace all leading zeros with spaces while printing to output. 
@@ -381,7 +381,7 @@ $
 - This character code is used to display amount values. 
 - Example: PIC ZZZ9,99,99.
 
-##### CPF:
+### CPF:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -413,7 +413,7 @@ $
 <details>
     <summary>Operadores Aritméticos</summary>
 
-##### PROGCOB05.cob -> Exemplo.
+### PROGCOB05.cob -> Exemplo.
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -465,10 +465,10 @@ $
           STOP RUN.
 </pre>
 
-##### Pergunta - Cálculo de média aritmética:
+### Pergunta - Cálculo de média aritmética:
 - Considerando as variáveis N1, N2, N3 e N4 como notas do aluno nos quatro bimestres escolares, qual a sequência correta para calcular sua média na variável Resultado?
 
-##### Resposta:
+#### Resposta:
 <pre>
 ADD N1 N2 N3 N4 TO Resultado
 DIVIDE Resultado BY 4 GIVING Resultado
@@ -478,7 +478,7 @@ DIVIDE Resultado BY 4 GIVING Resultado
 - Correto! Primeiro, faremos a soma das quatro variáveis, acumulando o valor na variável Resultado. 
 - Na sequência, dividiremos Resultado por 4, retornando o valor para a própria variável Resultado.
 
-##### Valores Positivos e Negativos
+### Valores Positivos e Negativos
 - Exemplo: PROGCOB06.cbl
 
 <pre>
@@ -521,7 +521,7 @@ DIVIDE Resultado BY 4 GIVING Resultado
 <details>
     <summary>Tomando Decisões e Operadores Relacionais</summary>
 
-##### Comando IF/ELSE/END-IF
+### Comando IF/ELSE/END-IF
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -558,10 +558,10 @@ DIVIDE Resultado BY 4 GIVING Resultado
           STOP RUN.
 </pre>
 
-##### Pergunta - Aplicando um Desconto:
+### Pergunta - Aplicando um Desconto:
 - Considerando as variáveis Valor (valor do produto) e Bandeira (operadora do cartão), quais rotinas são corretas para aplicarmos desconto de 10% quando o valor for maior ou igual a R$1000,00 e bandeira igual a VISA?
 
-##### Resposta:
+#### Resposta:
 <pre>
 IF Valor >= 1000 
     IF Bandeira = “VISA”
@@ -577,7 +577,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 - Podemos fazer o teste das condições em dois IFs separados, porém com dependência entre eles.
 - Com o uso do operador AND, as duas condições precisam ser verdadeiras para aplicação do desconto.
 
-##### Comando EVALUETE:
+### Comando EVALUETE:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -615,7 +615,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
           STOP RUN.
 </pre>
 
-##### Comparando Valores:
+### Comparando Valores:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -704,7 +704,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
                STOP RUN.
 </pre>
 
-##### Variável Nível 88 - Lógica:
+### Variável Nível 88 - Lógica:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -745,7 +745,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            STOP RUN.
 </pre>
 
-##### Operadores Relacionais:
+### Operadores Relacionais:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -784,7 +784,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            STOP RUN.
 </pre>
 
-##### Aumento Salarial:
+### Aumento Salarial:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -838,7 +838,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 <details>
     <summary>Lógica Estruturada e Uso de Parágrafos</summary>
 
-##### Parágrafos e Lógica Estruturada:
+### Parágrafos e Lógica Estruturada:
 
 <pre>
         IDENTIFICATION DIVISION.
@@ -888,17 +888,17 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### Pergunta - Aplicando um Desconto:
+### Pergunta - Aplicando um Desconto:
 - Aprendemos que a codificação usando lógica estruturada é uma exigência nas empresas em geral.
 - Quais das opções abaixo não representa uma vantagem em codificarmos de maneira estruturada ?
 
-##### Resposta:
+#### Resposta:
 - Velocidade de execução do programa.
 
 ##### Explicação Alternativa Correta:
 - Não há ganho de performance entre a escrita de um programa sem ou com o uso da lógica estrutura, pelo fato do cobol pré-compilar todo o código antes de rodar.
 
-##### Exercício: Tempo de Casa Estruturado
+### Exercício: Tempo de Casa Estruturado
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -966,7 +966,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 <details>
     <summary>Repetições e Aproveitamento de Código</summary>
 
-##### PERFOM TIMES
+### PERFOM TIMES
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1012,7 +1012,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### PERFORM VARYING
+### PERFORM VARYING
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1058,7 +1058,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### PERFORM UNTIL
+### PERFORM UNTIL
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1104,7 +1104,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### Output:
+### Output:
 
 <pre>
 QUANTIDADE DE VENDAS NO DIA: 
@@ -1126,7 +1126,7 @@ TOTAL: 00000117.00
 QUANTIDADE DE REGISTROS: 006
 </pre>
 
-##### COPY:
+### COPY:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1172,18 +1172,18 @@ QUANTIDADE DE REGISTROS: 006
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### Pergunta - Repetindo código com laços:
+### Pergunta - Repetindo código com laços:
 - Quais são as principais formas de uso do comando PERFORM? 
 - E quais destas podemos utilizar para ler N valores da console até que o valor digitado seja 99?
 
-##### Resposta:
+#### Resposta:
 - TIMES, VARYING e UNTIL. Podemos utilizar o UNTIL.
 
 ##### Explicação Alternativa Correta:
 - TIMES (n vezes), VARYING (N vezes com variável contador) e UNTIL (até que o valor seja igual) são as principais forma de uso do PERFORM. 
 - Para ler infinitamente da console até o valor ser 99 usamos o UNTIL (por exemplo: UNTIL variável = 99).
 
-##### Investimento Financeiro:
+### Investimento Financeiro:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1234,7 +1234,7 @@ QUANTIDADE DE REGISTROS: 006
        STOP RUN.
 </pre>
 
-##### STRING:
+### STRING:
 
 - STRING é um comando que serve para concatenar dois ou mais itens em um único, ou alterar o conteúdo de um item.
 - A estrutura do comando, é:
@@ -1247,11 +1247,11 @@ STRING item-1
 END-STRING.
 </pre>
 
-##### DELIMITED BY delimitador, ou SIZE, ou SPACE:
+### DELIMITED BY delimitador, ou SIZE, ou SPACE:
 - SIZE, todo o conteúdo será considerado.
 - SPACE será considerado somente o conteúdo até o primeiro espaço encontrado.
 
-##### PROGCOBSTRING:
+### PROGCOBSTRING:
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1290,7 +1290,7 @@ END-STRING.
        STOP RUN.
 </pre>
 
-##### PROGCOBSTRING - Output:
+### PROGCOBSTRING - Output:
 
 <pre>
 001,001,002,003,005,008,013,021,034,055,089,144,233,377,610,987,...
@@ -1301,7 +1301,7 @@ END-STRING.
 <details>
     <summary>Trabalhando com Variáveis de Índice</summary>
     
-##### Tabela:
+### Tabela:
 - MATRIZ | ARRAY | INDICE | TABELA = Todos significam a mesma coisa.
 
 </details>
