@@ -3,9 +3,9 @@
       **********************************************************
       * AREA DE COMENTARIOS - REMARKS
       * AUTHOR: LUCAS  LRM
-      * DATA: 29/11/2020
-      * OBJETIVO: RECEBER UM NUMERO E GERAR A TABUADA DE 1 A 10
-      * UTILIZAR O PERFORM - UNTIL
+      * DATA: 30/11/2020
+      * OBJETIVO: RECEBER AS VARIAVEIS DO ARQUIVO BOOK.cob
+      * UTILIZANDO O COPY
       **********************************************************
        ENVIRONMENT DIVISION.
        DATA DIVISION.
