@@ -6,20 +6,17 @@
 
 [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol") | [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
 
-<details>
-    <summary>Estrutura da Linguagem</summary>
+<details><summary>Estrutura da Linguagem</summary><blockquote>
     
-<p>IDE:
+##### IDE:
 - OpenCobolIDE
-</p>
 
-<p>Estrutura do Curso:
+##### Estrutura do Curso:
 - Níveis de Variáveis
 - Comandos de Decisão
 - Comandos de Repetição
 - Aproveitamento de Código
 - Padrões de Mercado
-</p>
 
 #### [Glot](https://glot.io "Glot")
 - Ambiente para trabalhar online.
