@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="https://github.com/lucasrmagalhaes/learning-COBOL/blob/main/COBOL.jpg" alt="DIO" width=300 height=150>
+</p>
+
 **CO**mmon **B**usiness **O**riented **L**anguage
 
 > Linguagem comum orientada a negócios é uma das linguagens de programação mais antigas, pertecendo à segunda geração das linguagens de programação. É muito utilizada em aplicações voltadas para o mundo financeiro, devido à sua precisão e rapidez na aritmética de ponto flutuante.
