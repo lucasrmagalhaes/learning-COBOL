@@ -1291,3 +1291,8 @@ END-STRING.
 </pre>
 
 </details>
+
+<details>
+    <summary>Trabalhando com Variáveis de Índice</summary>
+    
+</details>
