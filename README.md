@@ -11,8 +11,10 @@
 > Grace Murray Hopper foi almirante e, Analista de Sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
 
 <details>
-    <summary>Estrutura da Linguagem</summary>
+    <summary>Cobol: Primeiros Passos</summary>
   
+## Estrutura da Linguagem
+
 ### Apresentação  
 - [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol")
 - [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
@@ -203,10 +205,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - O Cobol não utiliza as colunas 1 a 6, portanto as aproveitamos para fazer marcações de alteração. É uma prática comum de mercado.
 - O Cobol tem duas áreas: A (8 a 11) para identificar divisões, seções, parágrafos e B (12 a 72) para comandos.
 
-</details>
-
-<details>
-    <summary>Comandos Básicos e Variáveis</summary>
+## Comandos Básicos e Variáveis</summary>
 
 ### Criando o primeiro programa
 
@@ -335,7 +334,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 
 - Z -> Máscara Z serve para omitir valores zerados.
 
-### Pergunta - Trabalhando com Variáveis:
+### Pergunta - Trabalhando com Variáveis
 - Em Cobol, as variáveis devem ser iniciadas com um número de nível associado, determinando que o nível superior será responsável (pai) pelo nível inferior. No exemplo abaixo, quais níveis poderiam ser utilizados para criação de um grupo de variáveis?
 
 a) __ wrk-data.
@@ -344,14 +343,14 @@ b) __ wrk-ano  pic x(04).
 b) __ wrk-mes  pic x(02).  
 b) __ wrk-dia  pic x(02).  
 
-#### Resposta:
+#### Resposta
 - Nivel 01 / b) Nivel 02
 
-##### Explicação Alternativa Correta:
+##### Explicação Alternativa Correta
 - Nível 01 é o menor nível aceito pelo Cobol. Quando for utilizado como variável de grupo, deverá conter abaixo outras variáveis começando pelo nível 02 até 49 . 
 - Se a variável for iniciada com nível 01 e não contiver outras variáveis , torna-se variável simples de um elemento.
 
-##### Explicação Alternativas Incorretas:
+##### Explicação Alternativas Incorretas
 a) Nivel 77 / b) Nivel 88
 - Nível 77 é utilizado no Cobol para declarar variáveis de um elemento (conteúdo) apenas. 
 - Nível 88 é utilizado para valores lógicos. Deve ser associado a uma variável de grupo.
@@ -359,7 +358,7 @@ a) Nivel 77 / b) Nivel 88
 a) Nivel 99 / b) Nivel 100
 - Não existe nível 99 em Cobol. Máximo até 88.
 
-### Máscaras de Edição:
+### Máscaras de Edição
 
 Z	
 - This character can be used in the place of 9, whenever you want to display the value to spool/report. It replace all leading zeros with spaces while printing to output. 
@@ -418,10 +417,7 @@ $
           DISPLAY 'CPF: ' WRK-CPF-ED.
 </pre>
 
-</details>
-
-<details>
-    <summary>Operadores Aritméticos</summary>
+## Operadores Aritméticos
 
 ### Testando os Operadores Aritméticos
 
@@ -529,10 +525,7 @@ DIVIDE Resultado BY 4 GIVING Resultado
           STOP RUN.
 </pre>
 
-</details>
-
-<details>
-    <summary>Tomando Decisões e Operadores Relacionais</summary>
+## Tomando Decisões e Operadores Relacionais
 
 ### Comando IF/ELSE/END-IF
 
@@ -856,10 +849,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
                STOP RUN.
 </pre>
 
-</details>
-
-<details>
-    <summary>Lógica Estruturada e Uso de Parágrafos</summary>
+## Lógica Estruturada e Uso de Parágrafos
 
 ### Parágrafos e Lógica Estruturada
 
@@ -988,10 +978,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
         	DISPLAY 'AUMENTO DE SALARIO DE ' WRK-AUMENTO.
 </pre>
 
-</details>
-
-<details>
-    <summary>Repetições e Aproveitamento de Código</summary>
+## Repetições e Aproveitamento de Código
 
 ### Perform TIMES
 
@@ -1333,10 +1320,7 @@ END-STRING.
 001,001,002,003,005,008,013,021,034,055,089,144,233,377,610,987,...
 </pre>
 
-</details>
-
-<details>
-    <summary>Trabalhando com Variáveis de Índice</summary>
+## Trabalhando com Variáveis de Índice
     
 ### Tabela
 - MATRIZ | ARRAY | INDICE | TABELA = Todos significam a mesma coisa.
