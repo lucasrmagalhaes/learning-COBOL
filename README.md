@@ -1459,4 +1459,79 @@ END-PERFORM
 **Explicação:**
 - A instrução VARYING inicia (FROM) a variável N-MES como 1, incrementando (BY) por 1 até que chegue a 12.
 
+### Juntando Conceitos
+- Lógica Estruturada,
+- Perform,
+- Variáveis de grupo,
+- Indexadas,
+- Operadores aritméticos...
+
+#### A proposta
+- Criarmos um programa que receba valores de vendas feitas em meses do ano. 
+- Serão aceitas várias vendas por mês, acumulando o valor por mês.
+- O final do programa acontece quando o mês digitado for igual a 99 (não será nesse caso necessário digitar o valor).
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOBVENDASFEITASMESESANO.
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+       		DECIMAL-POINT IS COMMA.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WRK-MESES.
+       		02 WRK-MES 	PIC 9(6)V99        OCCURS 12 TIMES.
+       77 WRK-MESVENDA  	PIC 9(2)           VALUE ZEROS.
+       77 WRK-VALOR     	PIC 9(06)V99       VALUE ZEROS.
+       
+       PROCEDURE DIVISION.
+       0000-PRINCIPAL.
+       		PERFORM 0100-INICIAR.
+       		PERFORM 0200-PROCESSAR.
+       		PERFORM 0300-FINALIZAR.
+       		STOP RUN.
+       
+       0100-INICIAR.
+       		DISPLAY 'MES DA VENDA  '
+       			ACCEPT WRK-MESVENDA.
+       		IF WRK-MESVENDA NOT EQUAL 99
+       		DISPLAY 'VALOR DA VENDA '
+       			ACCEPT WRK-VALOR
+         		ADD WRK-VALOR TO WRK-MES(WRK-MESVENDA)
+       		END-IF.
+       		
+       0200-PROCESSAR.
+       PERFORM 0100-INICIAR.
+       
+       0300-FINALIZAR.
+       		PERFORM VARYING WRK-MESVENDA FROM 1 BY 1
+                	UNTIL WRK-MESVENDA > 12
+       		DISPLAY 'VALOR MES ' WRK-MESVENDA ' = '
+                		     WRK-MES(WRK-MESVENDA)
+       		END-PERFORM.
+          
+Output:
+MES DA VENDA  
+09
+VALOR DA VENDA 
+200
+MES DA VENDA  
+10
+VALOR DA VENDA 
+100
+VALOR MES 01 = 000000,00
+VALOR MES 02 = 000000,00
+VALOR MES 03 = 000000,00
+VALOR MES 04 = 000000,00
+VALOR MES 05 = 000000,00
+VALOR MES 06 = 000000,00
+VALOR MES 07 = 000000,00
+VALOR MES 08 = 000000,00
+VALOR MES 09 = 000200,00
+VALOR MES 10 = 000100,00
+VALOR MES 11 = 000000,00
+VALOR MES 12 = 000000,00
+</pre>
+
 </details>
