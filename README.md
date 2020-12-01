@@ -46,14 +46,15 @@
 
 ### Maneira rápida de compilar no Linux
 
-- Instalações:
+- Instalações
 
 <pre>
 # apt-get install open-cobol
 # apt-get install gedit
 </pre>
 
-- Testando:
+- Testando
+
 <pre>
 # mkdir cobol
 # cd cobol
@@ -61,15 +62,15 @@
 # gedit exemplo.cbl
 </pre>
 
-- Rodando:
+- Rodando
+
 <pre>
 cobc -x -o exemplo.exe exemplo.cbl
 ./exemplo.exe
+
+-x --> Suporte para criar um executável.
+-o --> É para especificar a saída do nome de arquivo.
 </pre>
-
-- -x -> Suporte para criar um executável.
-
-- -o -> É para especificar a saída do nome de arquivo.
 
 ### Configurando o Ambiente
 - Preferences, atalho: F2
