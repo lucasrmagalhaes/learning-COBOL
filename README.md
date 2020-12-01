@@ -1438,6 +1438,6 @@ DATA 30 DE NOVEMBRO DE 2020
           
 Output:
 DATA 01 DE DEZ DE 2020
-<pre>
+</pre>
 
 </details>
