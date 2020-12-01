@@ -1,41 +1,48 @@
-**CO**mmon **B**usiness **O**riented **L**anguage
+<p align="center">
+  <img src="https://github.com/lucasrmagalhaes/learning-COBOL/blob/main/COBOL.jpg" alt="DIO" width=300 height=150>
+</p>
+
+<p align="center">
+  <strong>CO</strong>mmon <strong>B</strong>usiness <strong>O</strong>riented <strong>L</strong>anguage
+</p>
 
 > Linguagem comum orientada a negócios é uma das linguagens de programação mais antigas, pertecendo à segunda geração das linguagens de programação. É muito utilizada em aplicações voltadas para o mundo financeiro, devido à sua precisão e rapidez na aritmética de ponto flutuante.
 
-> Grace Murray Hopper foi almirante e, analista de sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
-
-[Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol") | [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
+> Grace Murray Hopper foi almirante e, Analista de Sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
 
 <details>
     <summary>Estrutura da Linguagem</summary>
-    
-#### IDE
+  
+### Apresentação  
+- [Documentação Oficial do Cobol](https://gnucobol.sourceforge.io/guides/GNUCobol2.pdf "Documentação Oficial do Cobol")
+- [Conhecendo Melhor Grace Hopper](https://youtu.be/eAlIiKFRryw "Conhecendo melhor Grace Hopper")
+
+### IDE
 - OpenCobolIDE
 
-#### Estrutura do Curso
+### Estrutura do Curso
 - Níveis de Variáveis
 - Comandos de Decisão
 - Comandos de Repetição
 - Aproveitamento de Código
 - Padrões de Mercado
 
-#### [Glot](https://glot.io "Glot")
+### [Glot](https://glot.io "Glot")
 - Ambiente para trabalhar online.
 - Diversas linguagens disponíveis.
 
-#### [Jdoodle](https://www.jdoodle.com "Jdoodle")
+### [Jdoodle](https://www.jdoodle.com "Jdoodle")
 - Ambiente para trabalhar online.
 - Permite salvar projetos e ter galerias por linguagem.
 
-#### [Paiza](https://paiza.io/en "Paiza")
+### [Paiza](https://paiza.io/en "Paiza")
 - Ambiente para trabalhar online.
 
-#### [OpenCobolIDE](https://pypi.org/project/OpenCobolIDE/#files "OpenCobolIDE")
+### [OpenCobolIDE](https://pypi.org/project/OpenCobolIDE/#files "OpenCobolIDE")
 - [Versão - Windows e Debian](https://launchpad.net/cobcide/+download "Windows e Debian") 
 - [Visual Studio: Extensão - Rech Cobol](https://marketplace.visualstudio.com/items?itemName=rechinformatica.rech-editor-cobol "Rech Cobol")
 
-#### Maneira rápida de compilar no Linux:
-
+### Maneira rápida de compilar no Linux
 - Instalações:
 <pre>
 # apt-get install open-cobol
@@ -60,12 +67,12 @@ cobc -x -o exemplo.exe exemplo.cbl
 
 - -o -> É para especificar a saída do nome de arquivo.
 
-#### Configurando o Ambiente
+### Configurando o Ambiente
 - Preferences, atalho: F2
 - Font Size: Alterado para 14.
 - Output Directory: Alterado para o diretório de preferência.
 
-#### Hierarquia de um programa COBOL
+### Hierarquia de um programa COBOL
 
 <pre>
 1. PROGRAMA COBOL
@@ -76,40 +83,41 @@ cobc -x -o exemplo.exe exemplo.cbl
                     1.1.1.1.1 STATEMENT
 </pre>
 
-#### A escrita do COBOL deve obedecer algumas regras de posicionamento:
+### A escrita do COBOL 
+- Deve obedecer algumas regras de posicionamento:
 
 ....|....1....|....2....|....3....|....4....|....5....|....6....|....7....|....80
 
-#### O que é permitido em cada coluna:
+### O que é permitido em cada coluna
 
-##### Colunas de 1 a 6:
+#### Colunas de 1 a 6
 - Área livre - Remarks
 
-##### Coluna 7:
+#### Coluna 7
 - Área de indicação
 - comentário = *
 - continuação de linha = -
 
-##### Colunas de 8 a 11:
+#### Colunas de 8 a 11
 - Área A
 - divisões, seções, parágrafos e declaração de variáveis
 
-##### Colunas de 12 a 72:
+#### Colunas de 12 a 72
 - Área B
 - Comandos
 
-##### Colunas de 73 a 80:
+#### Colunas de 73 a 80
 - Numeração interna do COBOL
 
-#### Divisões:
-O COBOL possui 4 divisões:
+### Divisões
 
-- **Identification Division** -> Básico
-- **Enviroment Division** -> Exemplo: Separador decimal não é o ponto e sim a vírgula.
-- ****Data Division**** -> Variáveis
-- ****Procedure Division****
+#### Possui 4 divisões
 
-###### DifIcilmente um programa nao irá ter as 4.
+- Identification Division -> Básico
+- Enviroment Division -> Exemplo: Separador decimal não é o ponto e sim a vírgula.
+- Data Division -> Variáveis
+- Procedure Division
+- Difícilmente um programa nao irá ter as 4.
 
 <pre>
 IDENTIFICATION DIVISION.
@@ -174,24 +182,24 @@ PROCEDURE DIVISION.
 
 Essas 4 divisões compoem as divisões básicas do COBOL.
 
-##### Pergunta - Executando um Programa COBOL:
+### Pergunta - Executando um Programa COBOL
 - Atualmente, existem dois ambientes onde podemos executar programas escritos em Cobol: Alta plataforma (Mainframe) e Plataforma Open (Windows, Linux).
 - No Mainframe, além do programa fonte, o que mais precisamos para compilar/executar rotinas em Cobol em modo Batch ?
 
-##### Resposta:
+#### Resposta
 - Rotinas JCL
 
-##### Explicação:
+##### Explicação
 - No mainframe, existem dois modos de trabalho: Batch e Online. No Batch, o usuário precisa solicitar (executar) as rotinas, seja em Cobol ou qualquer outra linguagem. Cada execução tem seu controle de acesso, tempo feito pelo JCL.
 
-##### Pergunta - Regras de um Programa COBOL:
+### Pergunta - Regras de um Programa COBOL
 - Na construção de um programa Cobol, quais das regras abaixo precisamos respeitar para executar sem erros?
 
-##### Resposta:
+#### Resposta
 - Remarks são utilizados para documentar alterações no código fonte.
 - Divisões, Seções e Parágrafos devem iniciar na Área A (colunas 8 a 11).
 
-##### Explicação:
+##### Explicação
 - O Cobol não utiliza as colunas 1 a 6, portanto as aproveitamos para fazer marcações de alteração. É uma prática comum de mercado.
 - O Cobol tem duas áreas: A (8 a 11) para identificar divisões, seções, parágrafos e B (12 a 72) para comandos.
 
@@ -200,7 +208,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 <details>
     <summary>Comandos Básicos e Variáveis</summary>
 
-##### Criando o primeiro programa:
+### Criando o primeiro programa
+
+#### PROGCOB01
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -221,7 +231,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - DISPLAY - Mostrar o texto.
 - STOP RUN - Terminar o programa.
 
-##### Variável Nível 77:
+### Variável Nível 77
+
+#### PROGCOB02
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -254,7 +266,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 - Tipo X: Alfanumérico. Aceita letras, números e símbolos. É o mais indicado.
 - Tipo 9: Números - Geralmente operações matemáticas.
 
-##### Variável Nível 01:
+### Variável Nível 01
+
+#### PROGCOB03
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -279,7 +293,9 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
           STOP RUN.
 </pre>
 
-##### Vírgula e Máscara de Edição:
+### Vírgula e Máscara de Edição
+
+#### PROGCOB04
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -319,7 +335,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 
 - Z -> Máscara Z serve para omitir valores zerados.
 
-##### Pergunta - Trabalhando com Variáveis:
+### Pergunta - Trabalhando com Variáveis:
 - Em Cobol, as variáveis devem ser iniciadas com um número de nível associado, determinando que o nível superior será responsável (pai) pelo nível inferior. No exemplo abaixo, quais níveis poderiam ser utilizados para criação de um grupo de variáveis?
 
 a) __ wrk-data.
@@ -328,7 +344,7 @@ b) __ wrk-ano  pic x(04).
 b) __ wrk-mes  pic x(02).  
 b) __ wrk-dia  pic x(02).  
 
-##### Resposta:
+#### Resposta:
 - Nivel 01 / b) Nivel 02
 
 ##### Explicação Alternativa Correta:
@@ -343,7 +359,7 @@ a) Nivel 77 / b) Nivel 88
 a) Nivel 99 / b) Nivel 100
 - Não existe nível 99 em Cobol. Máximo até 88.
 
-##### Máscaras de Edição:
+### Máscaras de Edição:
 
 Z	
 - This character can be used in the place of 9, whenever you want to display the value to spool/report. It replace all leading zeros with spaces while printing to output. 
@@ -373,7 +389,9 @@ $
 - This character code is used to display amount values. 
 - Example: PIC ZZZ9,99,99.
 
-##### CPF:
+### CPF
+
+#### PROGCOBCPF
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -405,7 +423,9 @@ $
 <details>
     <summary>Operadores Aritméticos</summary>
 
-##### PROGCOB05.cob -> Exemplo.
+### Testando os Operadores Aritméticos
+
+#### PROGCOB05
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -457,21 +477,22 @@ $
           STOP RUN.
 </pre>
 
-##### Pergunta - Cálculo de média aritmética:
+### Pergunta - Cálculo de média aritmética
 - Considerando as variáveis N1, N2, N3 e N4 como notas do aluno nos quatro bimestres escolares, qual a sequência correta para calcular sua média na variável Resultado?
 
-##### Resposta:
+#### Resposta
 <pre>
 ADD N1 N2 N3 N4 TO Resultado
 DIVIDE Resultado BY 4 GIVING Resultado
 </pre>
 
-##### Explicação Alternativa Correta:
+##### Explicação da Alternativa Correta
 - Correto! Primeiro, faremos a soma das quatro variáveis, acumulando o valor na variável Resultado. 
 - Na sequência, dividiremos Resultado por 4, retornando o valor para a própria variável Resultado.
 
-##### Valores Positivos e Negativos
-- Exemplo: PROGCOB06.cbl
+### Valores Positivos e Negativos
+
+#### PROGCOB06
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -513,7 +534,9 @@ DIVIDE Resultado BY 4 GIVING Resultado
 <details>
     <summary>Tomando Decisões e Operadores Relacionais</summary>
 
-##### Comando IF/ELSE/END-IF
+### Comando IF/ELSE/END-IF
+
+#### PROGCOB07
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -550,10 +573,10 @@ DIVIDE Resultado BY 4 GIVING Resultado
           STOP RUN.
 </pre>
 
-##### Pergunta - Aplicando um Desconto:
+### Pergunta - Aplicando um Desconto
 - Considerando as variáveis Valor (valor do produto) e Bandeira (operadora do cartão), quais rotinas são corretas para aplicarmos desconto de 10% quando o valor for maior ou igual a R$1000,00 e bandeira igual a VISA?
 
-##### Resposta:
+#### Resposta
 <pre>
 IF Valor >= 1000 
     IF Bandeira = “VISA”
@@ -565,11 +588,13 @@ IF Valor >= 1000 AND Bandeira = “VISA”
      COMPUTE Desconto = Valor * 0,10
 </pre>
 
-##### Explicação Alternativa Correta:
+##### Explicação da Alternativa Correta
 - Podemos fazer o teste das condições em dois IFs separados, porém com dependência entre eles.
 - Com o uso do operador AND, as duas condições precisam ser verdadeiras para aplicação do desconto.
 
-##### Comando EVALUETE:
+### Comando EVALUETE
+
+#### PROGCOB08
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -607,7 +632,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
           STOP RUN.
 </pre>
 
-##### Comparando Valores:
+### Comparando Valores
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -696,7 +721,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
                STOP RUN.
 </pre>
 
-##### Variável Nível 88 - Lógica:
+### Variável Nível 88 - Lógica
+
+#### PROGCOB10
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -737,7 +764,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            STOP RUN.
 </pre>
 
-##### Operadores Relacionais:
+### Operadores Relacionais
+
+#### PROGCOB11
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -776,7 +805,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            STOP RUN.
 </pre>
 
-##### Aumento Salarial:
+### Aumento Salarial
+
+#### PROGCOBAUMENTOSALARIAL
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -830,7 +861,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 <details>
     <summary>Lógica Estruturada e Uso de Parágrafos</summary>
 
-##### Parágrafos e Lógica Estruturada:
+### Parágrafos e Lógica Estruturada
+
+#### PROGCOB12
 
 <pre>
         IDENTIFICATION DIVISION.
@@ -880,17 +913,19 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### Pergunta - Aplicando um Desconto:
+### Pergunta - Aplicando um Desconto:
 - Aprendemos que a codificação usando lógica estruturada é uma exigência nas empresas em geral.
 - Quais das opções abaixo não representa uma vantagem em codificarmos de maneira estruturada ?
 
-##### Resposta:
+#### Resposta:
 - Velocidade de execução do programa.
 
 ##### Explicação Alternativa Correta:
 - Não há ganho de performance entre a escrita de um programa sem ou com o uso da lógica estrutura, pelo fato do cobol pré-compilar todo o código antes de rodar.
 
-##### Exercício: Tempo de Casa Estruturado
+### Tempo de Casa Estruturado
+
+#### PROGCOBTEMPODECASAESTRUTURADO
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -958,7 +993,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
 <details>
     <summary>Repetições e Aproveitamento de Código</summary>
 
-##### PERFOM TIMES
+### Perform TIMES
+
+#### PROGCOB13
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1004,7 +1041,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### PERFORM VARYING
+### Perform VARYING
+
+#### PROGCOB14
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1050,7 +1089,9 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### PERFORM UNTIL
+### Perform UNTIL
+
+#### PROGCOB15
 
 <pre>
        IDENTIFICATION DIVISION.
@@ -1096,7 +1137,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
        		DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-##### Output:
+##### PROGCOB15 - Output
 
 <pre>
 QUANTIDADE DE VENDAS NO DIA: 
@@ -1116,6 +1157,237 @@ QUANTIDADE DE VENDAS NO DIA:
 ==========================================
 TOTAL: 00000117.00
 QUANTIDADE DE REGISTROS: 006
+</pre>
+
+### COPY
+
+#### PROGCOB15
+
 <pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB15.
+      **********************************************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTHOR: LUCAS  LRM
+      * DATA: 30/11/2020
+      * OBJETIVO: RECEBER AS VARIAVEIS DO ARQUIVO BOOK.cob
+      * UTILIZANDO O COPY
+      **********************************************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+      ************************** COPY geralmente utilizado para padronização das variáveis.
+      ************************** Importando o conteúdo das variáveis do arquivo "BOOK.cob" - Include.
+       		COPY 'BOOK.cob'.
+       
+       PROCEDURE DIVISION.
+       0001-PRINCIPAL.
+       		PERFORM 0100-INICIALIZAR.
+       		IF WRK-VENDAS > 0 
+        		PERFORM 0200-PROCESSAR UNTIL WRK-VENDAS = 0
+        	END-IF.
+        	PERFORM 0300-FINALIZAR
+        	
+        	STOP RUN.
+       
+       0100-INICIALIZAR.
+       	       DISPLAY 'QUANTIDADE DE VENDAS NO DIA: '. 
+       	       ACCEPT WRK-VENDAS.
+       
+       0200-PROCESSAR.
+               ADD 1 TO WRK-QT.
+               ADD WRK-VENDAS TO WRK-ACUM.
+               PERFORM 0100-INICIALIZAR.
+               
+       
+       0300-FINALIZAR.
+       		DISPLAY '=========================================='
+       		DISPLAY 'TOTAL: ' WRK-ACUM.
+       		DISPLAY 'QUANTIDADE DE REGISTROS: ' WRK-QT.
+       		DISPLAY 'FINAL DE PROCESSAMENTO'.
+</pre>
+
+### Repetindo Código com Laços
+- Quais são as principais formas de uso do comando PERFORM? 
+- E quais destas podemos utilizar para ler N valores da console até que o valor digitado seja 99?
+
+#### Resposta
+- TIMES, VARYING e UNTIL. Podemos utilizar o UNTIL.
+
+##### Explicação da Alternativa Correta
+- TIMES (n vezes), VARYING (N vezes com variável contador) e UNTIL (até que o valor seja igual) são as principais forma de uso do PERFORM. 
+- Para ler infinitamente da console até o valor ser 99 usamos o UNTIL (por exemplo: UNTIL variável = 99).
+
+### Investimento Financeiro
+
+#### PROGCOBINVESTIMENTOFINANCEIRO
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOBINVESTIMENTOFINANCEIRO.
+      **********************************************************************
+      * AREA DE COMENTARIOS - REMARKS
+      * AUTHOR: LUCAS  LRM
+      * DATA: 30/11/2020
+      * OBJETIVO: MONTAR UM PROGRAMA QUE SIMULE UM INVESTIMENTO FINANCEIRO
+      * DESCRICAO: VALOR INICIAL DE INVESTIMENTO, PERIODO (NUMERO DE MESES) 
+      * E TAXAS DE CORRECAO MENSAL. AO FINAL, RECEBEREMOS O VALOR CORRIGIDO
+      * EM TELA.
+      **********************************************************************
+       ENVIRONMENT DIVISION.
+       CONFIGURATION SECTION.
+       SPECIAL-NAMES.
+       		DECIMAL-POINT IS COMMA.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 WRK-VALOR      PIC 9(06)V99       VALUE ZEROS.
+       77 WRK-MESES      PIC 9(03)          VALUE ZEROS.
+       77 WRK-TAXA-MES   PIC 9(02)          VALUE ZEROS.
+       77 WRK-VALOR-ED   PIC ZZZ.ZZ9,99     VALUE ZEROS.
+       
+       PROCEDURE DIVISION.
+       0001-PRINCIPAL.
+       		PERFORM 0100-INICIAR.
+       		PERFORM 0200-PROCESSAR.
+       		PERFORM 0300-FINALIZAR.
+       
+       0100-INICIAR.
+       DISPLAY 'VALOR INVESTIDO '.
+       		ACCEPT WRK-VALOR.
+       DISPLAY  'MESES DE APLICACAO '
+       		ACCEPT WRK-MESES.
+       DISPLAY 'TAXA MENSAL '
+       		ACCEPT WRK-TAXA-MES.
+       
+       0200-PROCESSAR.
+       PERFORM WRK-MESES TIMES
+       		COMPUTE WRK-VALOR = WRK-VALOR * (WRK-TAXA-MES / 100 + 1)               
+       END-PERFORM.
+       
+       0300-FINALIZAR.
+       MOVE WRK-VALOR TO WRK-VALOR-ED
+       DISPLAY 'VALOR CORRIGIDO ' WRK-VALOR-ED.
+
+       STOP RUN.
+</pre>
+
+### STRING
+
+- STRING é um comando que serve para concatenar dois ou mais itens em um único, ou alterar o conteúdo de um item.
+- A estrutura do comando, é:
+
+<pre>
+STRING item-1
+       item-2
+       DELIMITED BY (SIZE ou SPACE)
+       INTO variável-destino
+END-STRING.
+</pre>
+
+### DELIMITED BY delimitador, ou SIZE, ou SPACE
+- SIZE, todo o conteúdo será considerado.
+- SPACE será considerado somente o conteúdo até o primeiro espaço encontrado.
+
+#### PROGCOBSTRING
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOBSTRING.
+      **********************************************************************
+      * AUTOR: LUCAS  LRM
+      * DATA: 30/11/2020
+      **********************************************************************
+      * DESCRICAO: TESTANDO STRING e DELIMITED BY
+      **********************************************************************
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       77 FIB1 PIC 999.
+       77 FIB2 PIC 999.
+       77 FIB3 PIC 999.
+       77 I PIC 99.
+       77 FIBST PIC XXX.
+       77 RES PIC X(64).
+
+       PROCEDURE DIVISION.
+       MOVE 0 TO I 
+       MOVE 0 TO FIB1
+       MOVE 1 TO FIB2
+       MOVE SPACES TO RES
+       PERFORM UNTIL I GREATER THAN 15
+       	ADD FIB1 TO FIB2 GIVING FIB3
+       		MOVE FIB2 TO FIB1
+       		MOVE FIB3 TO FIB2
+       		MOVE FIB1 TO FIBST
+       	STRING RES DELIMITED BY SPACE
+       		FIBST DELIMITED BY SIZE
+       		","   DELIMITED BY SIZE INTO RES
+       		ADD 1 TO I
+       END-PERFORM.
+       DISPLAY RES "..."
+       STOP RUN.
+</pre>
+
+##### PROGCOBSTRING - Output
+
+<pre>
+001,001,002,003,005,008,013,021,034,055,089,144,233,377,610,987,...
+</pre>
+
+</details>
+
+<details>
+    <summary>Trabalhando com Variáveis de Índice</summary>
+    
+### Tabela
+- MATRIZ | ARRAY | INDICE | TABELA = Todos significam a mesma coisa.
+
+### Criando Variável com Índice
+
+#### PROGCOB16
+
+<pre>
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. PROGCOB16.
+      **************************************************
+      * AUTOR: LUCAS LRM
+      * DATA: 30/11/2020
+      **************************************************
+      * OBJETIVO: RECEBER E IMPRIMIR A DATA DO SISTEMA
+      * UTILIZAR: VARIAVEL TIPO TABELA - OCCURS
+      **************************************************
+       ENVIRONMENT DIVISION.
+       DATA DIVISION.
+       WORKING-STORAGE SECTION.
+       01 WRK-MESES.
+           03 WRK-MES 	PIC X(09)  OCCURS 12 TIMES.
+       01 WRK-DATASYS.
+           02 ANOSYS 	PIC 9(04)  VALUE ZEROS.
+           02 MESSYS 	PIC 9(02)  VALUE ZEROS.
+           02 DIASYS 	PIC 9(02)  VALUE ZEROS.
+           
+       PROCEDURE DIVISION.
+          ACCEPT WRK-DATASYS FROM DATE YYYYMMDD.
+          	PERFORM 0400-MONTAMES.
+          DISPLAY 'DATA ' DIASYS ' DE ' WRK-MES(MESSYS) 'DE ' ANOSYS.
+          
+          STOP RUN.
+          
+       0400-MONTAMES.
+       	  MOVE 'JANEIRO	' 	TO WRK-MES(01).
+       	  MOVE 'FEVEIRO	' 	TO WRK-MES(02).
+       	  MOVE 'MARCO	' 	TO WRK-MES(03).
+       	  MOVE 'ABRIL	' 	TO WRK-MES(04).
+       	  MOVE 'MAIO	' 	TO WRK-MES(05).
+       	  MOVE 'JUNHO	' 	TO WRK-MES(06).
+       	  MOVE 'JULHO	' 	TO WRK-MES(07).
+       	  MOVE 'AGOSTO	' 	TO WRK-MES(08).
+       	  MOVE 'SETEMBRO' 	TO WRK-MES(09).
+       	  MOVE 'OUTUBRO	' 	TO WRK-MES(10).
+       	  MOVE 'NOVEMBRO' 	TO WRK-MES(11).
+       	  MOVE 'DEZEMBRO' 	TO WRK-MES(12).
+          
+Output:
+DATA 30 DE NOVEMBRO DE 2020
+</pre>
 
 </details>
