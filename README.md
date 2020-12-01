@@ -1440,4 +1440,23 @@ Output:
 DATA 01 DE DEZ DE 2020
 </pre>
 
+### Pergunta - Leitura de Variável Indexada
+
+**Considerando que usaremos a variável N-MES para auxiliar no LOOP dos meses, quais das opções abaixo será capaz de:**
+- ler os valores de todos os meses do ano (armazenados na variável indexada MES),
+- verificar se existe algum valor e, caso afirmativo imprimir?
+
+**Resposta:**
+<pre>
+PERFORM VARYING N-MES FROM 1 BY 1 UNTIL N-MES > 12
+
+    IF MES(N-MES) > 0 
+             DISPLAY ‘ VALOR DO MES ‘ N-MES ‘ = ‘  MES(N-MES)
+    END-IF
+END-PERFORM
+</pre>
+
+**Explicação:**
+- A instrução VARYING inicia (FROM) a variável N-MES como 1, incrementando (BY) por 1 até que chegue a 12.
+
 </details>
