@@ -45,7 +45,9 @@
 - [Visual Studio: Extensão - Rech Cobol](https://marketplace.visualstudio.com/items?itemName=rechinformatica.rech-editor-cobol "Rech Cobol")
 
 ### Maneira rápida de compilar no Linux
+
 - Instalações:
+
 <pre>
 # apt-get install open-cobol
 # apt-get install gedit
@@ -184,24 +186,24 @@ PROCEDURE DIVISION.
 
 Essas 4 divisões compoem as divisões básicas do COBOL.
 
-### Pergunta - Executando um Programa COBOL
+### Executando um Programa COBOL
 - Atualmente, existem dois ambientes onde podemos executar programas escritos em Cobol: Alta plataforma (Mainframe) e Plataforma Open (Windows, Linux).
 - No Mainframe, além do programa fonte, o que mais precisamos para compilar/executar rotinas em Cobol em modo Batch ?
 
-#### Resposta
+***Resposta***
 - Rotinas JCL
 
-##### Explicação
+***Explicação***
 - No mainframe, existem dois modos de trabalho: Batch e Online. No Batch, o usuário precisa solicitar (executar) as rotinas, seja em Cobol ou qualquer outra linguagem. Cada execução tem seu controle de acesso, tempo feito pelo JCL.
 
-### Pergunta - Regras de um Programa COBOL
+### Regras de um Programa COBOL
 - Na construção de um programa Cobol, quais das regras abaixo precisamos respeitar para executar sem erros?
 
-#### Resposta
+***Resposta***
 - Remarks são utilizados para documentar alterações no código fonte.
 - Divisões, Seções e Parágrafos devem iniciar na Área A (colunas 8 a 11).
 
-##### Explicação
+***Explicação***
 - O Cobol não utiliza as colunas 1 a 6, portanto as aproveitamos para fazer marcações de alteração. É uma prática comum de mercado.
 - O Cobol tem duas áreas: A (8 a 11) para identificar divisões, seções, parágrafos e B (12 a 72) para comandos.
 
@@ -334,7 +336,7 @@ Essas 4 divisões compoem as divisões básicas do COBOL.
 
 - Z -> Máscara Z serve para omitir valores zerados.
 
-### Pergunta - Trabalhando com Variáveis
+### Trabalhando com Variáveis
 - Em Cobol, as variáveis devem ser iniciadas com um número de nível associado, determinando que o nível superior será responsável (pai) pelo nível inferior. No exemplo abaixo, quais níveis poderiam ser utilizados para criação de um grupo de variáveis?
 
 a) __ wrk-data.
@@ -343,14 +345,14 @@ b) __ wrk-ano  pic x(04).
 b) __ wrk-mes  pic x(02).  
 b) __ wrk-dia  pic x(02).  
 
-#### Resposta
+***Resposta***
 - Nivel 01 / b) Nivel 02
 
-##### Explicação Alternativa Correta
+***Explicação da Alternativa Correta***
 - Nível 01 é o menor nível aceito pelo Cobol. Quando for utilizado como variável de grupo, deverá conter abaixo outras variáveis começando pelo nível 02 até 49 . 
 - Se a variável for iniciada com nível 01 e não contiver outras variáveis , torna-se variável simples de um elemento.
 
-##### Explicação Alternativas Incorretas
+***Explicação das Alternativas Incorretas***
 a) Nivel 77 / b) Nivel 88
 - Nível 77 é utilizado no Cobol para declarar variáveis de um elemento (conteúdo) apenas. 
 - Nível 88 é utilizado para valores lógicos. Deve ser associado a uma variável de grupo.
@@ -473,16 +475,16 @@ $
           STOP RUN.
 </pre>
 
-### Pergunta - Cálculo de média aritmética
+### Cálculo de Média Aritmética
 - Considerando as variáveis N1, N2, N3 e N4 como notas do aluno nos quatro bimestres escolares, qual a sequência correta para calcular sua média na variável Resultado?
 
-#### Resposta
+***Resposta***
 <pre>
 ADD N1 N2 N3 N4 TO Resultado
 DIVIDE Resultado BY 4 GIVING Resultado
 </pre>
 
-##### Explicação da Alternativa Correta
+***Explicação da Alternativa Correta***
 - Correto! Primeiro, faremos a soma das quatro variáveis, acumulando o valor na variável Resultado. 
 - Na sequência, dividiremos Resultado por 4, retornando o valor para a própria variável Resultado.
 
@@ -566,10 +568,10 @@ DIVIDE Resultado BY 4 GIVING Resultado
           STOP RUN.
 </pre>
 
-### Pergunta - Aplicando um Desconto
+### Aplicando um Desconto
 - Considerando as variáveis Valor (valor do produto) e Bandeira (operadora do cartão), quais rotinas são corretas para aplicarmos desconto de 10% quando o valor for maior ou igual a R$1000,00 e bandeira igual a VISA?
 
-#### Resposta
+***Resposta***
 <pre>
 IF Valor >= 1000 
     IF Bandeira = “VISA”
@@ -581,7 +583,7 @@ IF Valor >= 1000 AND Bandeira = “VISA”
      COMPUTE Desconto = Valor * 0,10
 </pre>
 
-##### Explicação da Alternativa Correta
+***Explicação da Alternativa Correta***
 - Podemos fazer o teste das condições em dois IFs separados, porém com dependência entre eles.
 - Com o uso do operador AND, as duas condições precisam ser verdadeiras para aplicação do desconto.
 
@@ -903,14 +905,14 @@ IF Valor >= 1000 AND Bandeira = “VISA”
            DISPLAY 'FINAL DE PROCESSAMENTO'.
 </pre>
 
-### Pergunta - Aplicando um Desconto:
+### Aplicando um Desconto
 - Aprendemos que a codificação usando lógica estruturada é uma exigência nas empresas em geral.
 - Quais das opções abaixo não representa uma vantagem em codificarmos de maneira estruturada ?
 
-#### Resposta:
+***Resposta***
 - Velocidade de execução do programa.
 
-##### Explicação Alternativa Correta:
+***Explicação da Alternativa Correta***
 - Não há ganho de performance entre a escrita de um programa sem ou com o uso da lógica estrutura, pelo fato do cobol pré-compilar todo o código antes de rodar.
 
 ### Tempo de Casa Estruturado
@@ -1198,10 +1200,10 @@ QUANTIDADE DE REGISTROS: 006
 - Quais são as principais formas de uso do comando PERFORM? 
 - E quais destas podemos utilizar para ler N valores da console até que o valor digitado seja 99?
 
-#### Resposta
+***Resposta***
 - TIMES, VARYING e UNTIL. Podemos utilizar o UNTIL.
 
-##### Explicação da Alternativa Correta
+***Explicação da Alternativa Correta***
 - TIMES (n vezes), VARYING (N vezes com variável contador) e UNTIL (até que o valor seja igual) são as principais forma de uso do PERFORM. 
 - Para ler infinitamente da console até o valor ser 99 usamos o UNTIL (por exemplo: UNTIL variável = 99).
 
