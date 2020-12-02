@@ -1526,6 +1526,21 @@ VALOR MES 12 = 000000,00
 <details>
     <summary>Cobol parte 2: Manipulando Arquivos de Dados</summary>
 
+<h1 align="center">Iniciando o projeto - Telas</h1>
+
+### Formas de Acesso
+- Sequential Access
+- Random Access
+
+### Projeto
+- CREATE (Criar) C
+- READ (LER) R
+- UPDATE (ATUALIZAR) U
+- DELETE (DELETAR) D
+
+### External Terminal
+- OpenCobol - Preferences - Run - Run in external terminal [x]
+
 
 
 </details>
