@@ -1,11 +1,13 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOBDESAFIODANTE.
-      *********************************
+      *******************************************
       * AREA DE COMENTARIOS - REMARKS
       * AUTHOR: LUCAS LRM
       * DATA: 30/11/2020
       * DESCRICAO: DESAFIO DO DANTE
-      *********************************
+      * ATUALIZACAO: LINHA MAX COLUNA 72
+      * ATUALIZACAO: FALHAR LINHA COLUNA MIN 12
+      *******************************************
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
        SPECIAL-NAMES.
@@ -16,9 +18,12 @@
        77 WS77-AUMENTO-CAD1    PIC 9(03)V99    VALUE ZEROS.
        77 WS77-TEMPOCASA-CAD   PIC 9(02)       VALUE ZEROS.
        77 WS77-TEMPOCASA-CAD1  PIC 9(02)       VALUE ZEROS.
-
-       77 WS77-CAD             PIC X(42)       VALUE "LUCAS DA ROSA MAGALHAES         202050000".
-       77 WS77-CAD1            PIC X(42)       VALUE "DANTE ROBERTO DE VIT LUNARDI    198520000".
+      ******************** MAX COLUNA 72
+       77 WS77-CAD             PIC X(42)       VALUE "LUCAS DA ROSA MAGA
+      -    "LHAES         202050000".
+      ******************** INICIO COLUNA 12
+       77 WS77-CAD1            PIC X(42)       VALUE 
+           "DANTE ROBERTO DE VIT LUNARDI    198520000".
 
        01 WS01-DATASISTEMA.
            03 WS03-ANO         PIC 9(04)       VALUE ZEROS.
