@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/lucasrmagalhaes/learning-COBOL/blob/main/cobol/COBOL.jpg" alt="COBOL" width=300 height=150>
+  <img src="https://github.com/lucasrmagalhaes/learning-COBOL/blob/main/imagens/COBOL.jpg" alt="COBOL" width=300 height=150>
 </p>
 
 <p align="center">
