@@ -1630,4 +1630,31 @@ VALOR MES 12 = 000000,00
            STOP RUN.
 </pre>
 
+### Construção de telas
+
+**Pergunta:**
+- A tela baseada no padrão ANSI (American National Standards Institute) possui dimensões de 24 linhas por 80 colunas. 
+- Se posicionarmos algo na linha 27, pela Screen Section, o que irá acontecer?
+
+**Dica:**
+- Altere o código desta aula modificando as duas últimas linhas do MENU, conforme exemplo abaixo:
+
+<pre>
+01 MENU.
+05 LINE 07 COLUMN 15 VALUE '1 - INCLUIR'.
+05 LINE 08 COLUMN 15 VALUE '2 - CONSULTAR'.
+05 LINE 09 COLUMN 15 VALUE '3 - ALTERAR'.
+05 LINE 10 COLUMN 15 VALUE '4 - EXCLUIR'.
+05 LINE 11 COLUMN 15 VALUE '5 - RELATORIO'.
+05 LINE 12 COLUMN 15 VALUE 'X - SAIDA'.
+05 LINE 27 COLUMN 15 VALUE 'OPCAO......: ' .
+05 LINE 27 COLUMN 28 PIC 999 USING WRK-OPCAO.
+</pre>
+
+**Resposta:**
+- A informação da linha 27 será mostrada logo após o último display (linha 12 - X - SAIDA).
+
+**Explicação:**
+- Como não existe mais de 24 linhas, o COBOL entende que a informação não tem posição definida. Portanto, irá para o último item impresso.
+
 </details>
