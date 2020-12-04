@@ -1943,6 +1943,19 @@ VALOR MES 12 = 000000,00
            ACCEPT WRK-TECLA AT 1620.
 </pre>
 
+### Arquivo Sequencial e Indexado
+
+**Pergunta:**
+- Qual das opções abaixo são vantagens no manuseio de arquivos indexados ao invés de sequenciais?
+
+**Resposta:**
+- Acesso direto ao registro através de uma chave
+- Inclusão de apenas um registro por chave, evitando duplicidade
+
+**Explicação:**
+- Acessar diretamente o registro por chave evita a leitura inteira do arquivo para localizar uma chave específica (registro).
+- Dados duplicados podem comprometer o resultado da análise de um arquivo. O mesmo registro pode acabar sendo processado mais de uma vez, gerando inconsistência.
+
 <h1 align="center">Validação, Erros e Menu</h1>
 
 <h1 align="center">Manutenção de Registros</h1>
