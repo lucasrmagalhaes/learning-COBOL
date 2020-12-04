@@ -17,7 +17,7 @@
        DATA DIVISION.
        FILE SECTION.
        FD CLIENTES.
-       01 CLIENTS-REG.
+       01 CLIENTES-REG.
            05 CLIENTES-CHAVE.
                10 CLIENTES-FONE PIC 9(09).
            05 CLIENTES-NOME     PIC X(30).
@@ -53,6 +53,17 @@
            05 LINE 14 COLUMN 15 VALUE 'OPCAO: '.
            05 LINE 14 COLUMN 23 USING WRK-OPCAO.
 
+       01 TELA-REGISTRO.
+           05 CHAVE FOREGROUND-COLOR 2.
+               10 LINE 10 COLUMN 10 VALUE 'TELEFONE '.
+               10 COLUMN PLUS 2 PIC 9(09) USING CLIENTES-FONE
+                   BLANK WHEN ZEROS.
+           05 SS-DADOS.
+               10 LINE 11 COLUMN 10 VALUE 'NOMES: '.
+               10 COLUMN PLUS 2 PIC X(30) USING CLIENTES-NOME.
+               10 LINE 12 COLUMN 10 VALUE 'EMAIL: '.
+               10 COLUMN PLUS 2 PIC X(40) USING CLIENTES-EMAIL.
+
        PROCEDURE DIVISION.
        0001-PRINCIPAL SECTION.
            PERFORM 1000-INICIAR.
@@ -68,8 +79,6 @@
                    CLOSE CLIENTES
                    OPEN I-O CLIENTES
                END-IF.
-           DISPLAY TELA.
-           ACCEPT MENU.
 
        2000-PROCESSAR.
            EVALUATE WRK-OPCAO
@@ -96,4 +105,7 @@
        5000-INCLUIR.
            MOVE 'MODULO - INCLUSAO ' TO WRK-MODULO.
            DISPLAY TELA.
-           ACCEPT WRK-TECLA AT 1620.
+               ACCEPT TELA-REGISTRO.
+                   WRITE CLIENTES-REG.
+                       DISPLAY TELA.
+           ACCEPT MENU.
