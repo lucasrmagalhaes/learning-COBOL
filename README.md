@@ -1837,4 +1837,12 @@ VALOR MES 12 = 000000,00
 - Cria uma máscara de entrada com asterisco (*) no lugar do texto digitado. Ideal para digitação de dados tipo senha.
 - EX.: 05 LINE 13 COLUMN 28 USING WRK-OPCAO SECURE
 
+<h1 align="center">Incluindo Registros</h1>
+
+<h1 align="center">Validação, Erros e Menu</h1>
+
+<h1 align="center">Manutenção de Registros</h1>
+
+<h1 align="center">Criando Relatórios</h1>
+
 </details>
