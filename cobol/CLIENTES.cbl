@@ -5,11 +5,30 @@
       * AUTOR: LUCAS
       ******************************************
        ENVIRONMENT DIVISION.
+       INPUT-OUTPUT SECTION.
+       FILE-CONTROL.
+           SELECT CLIENTES ASSIGN TO
+           'C:\Users\Lucas\Desktop\Workspace\learning-COBOL\cobol\CLIENT
+      -    'ES.DAT'
+               ORGANIZATION IS INDEXED
+               ACCESS MODE IS RANDOM
+               FILE STATUS IS CLIENTES-STATUS
+               RECORD KEY  IS CLIENTES-CHAVE.
        DATA DIVISION.
+       FILE SECTION.
+       FD CLIENTES.
+       01 CLIENTS-REG.
+           05 CLIENTES-CHAVE.
+               10 CLIENTES-FONE PIC 9(09).
+           05 CLIENTES-NOME     PIC X(30).
+           05 CLIENTES-EMAIL    PIC X(40).
+
+
        WORKING-STORAGE SECTION.
        77 WRK-OPCAO    PIC X(1).
        77 WRK-MODULO   PIC X(25).
        77 WRK-TECLA    PIC X(1).
+       77 CLIENTES-STATUS   PIC 9(02).
 
        SCREEN SECTION.
        01 TELA.
@@ -42,6 +61,13 @@
            STOP RUN.
 
        1000-INICIAR.
+      ***************** INPUT E OUTPUT
+           OPEN I-O CLIENTES
+               IF CLIENTES-STATUS = 35 THEN
+                   OPEN OUTPUT CLIENTES
+                   CLOSE CLIENTES
+                   OPEN I-O CLIENTES
+               END-IF.
            DISPLAY TELA.
            ACCEPT MENU.
 
@@ -64,7 +90,8 @@
            END-EVALUATE.
 
        3000-FINALIZAR.
-           CONTINUE.
+      ******************** FORCANDO O FECHAMENTO
+           CLOSE CLIENTES.
 
        5000-INCLUIR.
            MOVE 'MODULO - INCLUSAO ' TO WRK-MODULO.
