@@ -1814,4 +1814,26 @@ VALOR MES 12 = 000000,00
            CONTINUE.
 </pre>
 
+### Personalizando Cores
+
+**Número**     **Cor**          **Constante COBOL**
+0               Preto	            COB-COLOR-BLACK
+1               Verde	            COB-COLOR-GREEN
+2               Azul	            COB-COLOR-BLUE
+3               Turquesa	        COB-COLOR-CYAN
+4               Vermelho	        COB-COLOR-RED
+5               Magenta	          COB-COLOR-MAGENTA
+6               Amarelo	          COB-COLOR-YELLOW
+7               Branco	          COB-COLOR-WHITE
+
+### Opções para Entrada de Dados
+
+**REVERSE-VIDEO:**
+- Inverte as cores de background e foreground (ex: letra preta, fundo branco)
+- EX.: 05 LINE 13 COLUMN 28 USING WRK-OPCAO REVERSE-VIDEO
+
+**SECURE:**
+- Cria uma máscara de entrada com asterisco (*) no lugar do texto digitado. Ideal para digitação de dados tipo senha.
+- EX.: 05 LINE 13 COLUMN 28 USING WRK-OPCAO SECURE
+
 </details>
