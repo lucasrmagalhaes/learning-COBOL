@@ -1956,7 +1956,7 @@ VALOR MES 12 = 000000,00
 - Acessar diretamente o registro por chave evita a leitura inteira do arquivo para localizar uma chave específica (registro).
 - Dados duplicados podem comprometer o resultado da análise de um arquivo. O mesmo registro pode acabar sendo processado mais de uma vez, gerando inconsistência.
 
-<h2 align="center>Inclusão de Dados</h2>
+### Inclusão de Dados
 
 <pre>
        IDENTIFICATION DIVISION.
