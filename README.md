@@ -2252,3 +2252,45 @@ VALOR MES 12 = 000000,00
 <h1 align="center">Criando Relatórios</h1>
 
 </details>
+
+<details>
+    <summary>Capital Code: Curso COBOL</summary>
+
+## Aula 01:
+
+### TN3270 Plus
+- Ferramente de acesso ao MAINFRAME.
+- Existem diversas ferramentas.
+
+### Bancos - Sistema Financeiro 
+- Alta performance.
+- Precisão.
+- DB2 banco de dados da IBM que trabalha em conjunto com MAINFRAME - COBOL.
+
+### Níveis
+- Programador JR.
+- Programador Pleno
+- Programador Sênior
+- Analista Nível I
+- Analista Nível II
+- Analista Nível III
+
+### INITIALIZE
+
+- Inicializando a variável com 0.
+
+<pre>
+INITIALIZE WS-DIA
+=
+MOVE 0 TO WS-DIA
+</pre>
+
+### GOBACK
+
+- Encerra o programa.
+
+<pre>
+GOBACK.
+</pre>
+
+</details>
