@@ -2198,6 +2198,9 @@ VALOR MES 12 = 000000,00
 
 </pre>
 
+-  No parágrafo 5000-INCLUIR, logo após o WRITE CLIENTES-REG, vamos testar o file status da operação.
+- Caso o valor retornado seja igual a 22, será enviada para a tela uma mensagem de aviso ao usuário e um ACCEPT para segurar o processamento.
+
 <h1 align="center">Validação, Erros e Menu</h1>
 
 <h1 align="center">Manutenção de Registros</h1>
