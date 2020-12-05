@@ -2206,7 +2206,7 @@ VALOR MES 12 = 000000,00
 
 | Código |                     Status                          |                           
 |:---:|:------------------------------------------------------:|
-|  00  | Conclusão bem-sucedida |
+|  00  | Conclusão bem-sucedida. |
 |  02  | Apenas arquivos indexados. Causas possíveis: Para uma instrução READ, o valor da chave para a chave atual é igual ao valor da mesma chave no próximo registro na chave de referência atual. Para uma instrução WRITE ou REWRITE, o registro recém-criado criou um valor de chave duplicado para pelo menos uma chave de registro alternativa para a qual duplicatas são permitidas. |
 |  04  | O comprimento do registro que está sendo processado não está de acordo com os atributos de arquivo fixos para esse arquivo. |
 |  05  | O arquivo opcional referenciado não está presente no momento em que a instrução OPEN é executada. |
