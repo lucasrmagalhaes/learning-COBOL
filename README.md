@@ -2017,8 +2017,11 @@ VALOR MES 12 = 000000,00
        01 TELA-REGISTRO.
            05 CHAVE FOREGROUND-COLOR 2.
                10 LINE 10 COLUMN 10 VALUE 'TELEFONE '.
+     *************************** PLUS - AUMENTO/PULO DE 2 CASAS
                10 COLUMN PLUS 2 PIC 9(09) USING CLIENTES-FONE
+     *************************** QUANDO ESTIVER EM BRANCO, PREENCHE COM 0
                    BLANK WHEN ZEROS.
+                   
            05 SS-DADOS.
                10 LINE 11 COLUMN 10 VALUE 'NOMES: '.
                10 COLUMN PLUS 2 PIC X(30) USING CLIENTES-NOME.
