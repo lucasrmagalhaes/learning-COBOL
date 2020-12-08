@@ -2807,6 +2807,8 @@ VALOR MES 12 = 000000,00
 - Se informado N, voltamos ao início do parágrafo 5000-INCLUIR. Caso contrário, o fluxo irá levar ao menu principal.
 - Agora oferecemos aos(às) usuários(as) a opção de editar a inserção, sem ter de voltar ao menu principal.
 
+<h1 align="center">Manutenção de Registros</h1>
+
 ### Consultando Registros
 
 <pre>
@@ -2954,7 +2956,7 @@ VALOR MES 12 = 000000,00
                        ACCEPT MOSTRA-ERRO.
 </pre>
 
-<h1 align="center">Manutenção de Registros</h1>
+
 
 <h1 align="center">Criando Relatórios</h1>
 
