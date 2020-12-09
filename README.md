@@ -3145,7 +3145,7 @@ VALOR MES 12 = 000000,00
                       END-IF.
 </pre>
 
-### Regravação de registro
+### Regravação de Registro
 
 **Pergunta**
 - Qual a sequência correta para regravação de um registro de dados?
@@ -3155,6 +3155,18 @@ VALOR MES 12 = 000000,00
   
 **Explicação**
 - Com a chave inserida, primeiro faremos a busca do registro (READ) e caso seja encontrado regravamos (REWRITE).
+
+### Processos Críticos
+
+**Pergunta**
+- Em processos críticos, como a exclusão de um registro, qual a vantagem de utilizarmos a técnica de 02 fases?
+- Relembrando: Primeira Fase - Procurar o registro Segunda Fase - Se encontrar o registro, perguntar se deseja a excluí-lo.
+
+**Resposta**
+- Evita que, acidentalmente, excluiremos o registro.
+  
+**Explicação**
+- É uma boa prática de programação questionar o usuário sobre a certeza de uma operação crítica e, com sua confirmação, realizar a operação.
 
 <h1 align="center">Criando Relatórios</h1>
 
