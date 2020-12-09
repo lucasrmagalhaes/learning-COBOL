@@ -3145,6 +3145,17 @@ VALOR MES 12 = 000000,00
                       END-IF.
 </pre>
 
+### Regravação de registro
+
+**Pergunta**
+- Qual a sequência correta para regravação de um registro de dados?
+
+**Resposta**
+- Receber uma chave, localizar o registro com o comando READ, testar se foi encontrado, caso afirmativo usar o comando REWRITE <variavel de arquivo>
+  
+**Explicação**
+- Com a chave inserida, primeiro faremos a busca do registro (READ) e caso seja encontrado regravamos (REWRITE).
+
 <h1 align="center">Criando Relatórios</h1>
 
 </details>
