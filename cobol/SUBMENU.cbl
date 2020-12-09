@@ -1,15 +1,15 @@
        IDENTIFICATION DIVISION.
-       PROGRAM-ID. CLIENTES.
+       PROGRAM-ID. SUBMENU.
       ******************************************
-      * OBJETIVO: SISTEMA DE GESTAO DE CLIENTES
+      * OBJETIVO: SUB-MENU
       * AUTOR: LUCAS
       ******************************************
        ENVIRONMENT DIVISION.
        DATA DIVISION.
        WORKING-STORAGE SECTION.
-       77 WRK-OPCAO        PIC X(1).
-       77 WRK-MODULO       PIC X(25).
-       77 WRK-TECLA        PIC X(1).
+       77 WRK-OPCAO  PIC X(1).
+       77 WRK-MODULO PIC X(25).
+       77 WRK-TECLA PIC X(1).
        77 WRK-OPCAO-RELATO PIC X(1).
 
        SCREEN SECTION.
@@ -26,10 +26,10 @@
                    BACKGROUND-COLOR 1 FROM WRK-MODULO.
 
        01 MENU-RELATO.
-           05 LINE 12 COLUMN 55 VALUE '1 - EM TELA'.
-           05 LINE 13 COLUMN 55 VALUE '2 - EM DISCO'.
-           05 LINE 14 COLUMN 55 VALUE 'OPCAO......: ' .
-           05 LINE 14 COLUMN 68 USING WRK-OPCAO-RELATO.
+           05 LINE 12 COLUMN 40 VALUE '1 - EM TELA'.
+           05 LINE 13 COLUMN 40 VALUE '2 - EM DISCO'.
+           05 LINE 15 COLUMN 40 VALUE 'OPCAO......: '.
+           05 LINE 15 COLUMN 53 USING WRK-OPCAO-RELATO.
 
        PROCEDURE DIVISION.
        0001-PRINCIPAL SECTION.
