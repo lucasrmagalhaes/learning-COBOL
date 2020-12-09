@@ -1,13 +1,14 @@
        IDENTIFICATION DIVISION.
        PROGRAM-ID. PROGCOBDESAFIODANTE.
-      *******************************************
-      * AREA DE COMENTARIOS - REMARKS
-      * AUTHOR: LUCAS LRM
-      * DATA: 30/11/2020
-      * DESCRICAO: DESAFIO DO DANTE
-      * ATUALIZACAO: LINHA MAX COLUNA 72
-      * ATUALIZACAO: FALHAR LINHA COLUNA MIN 12
-      *******************************************
+      *************************************************************
+      *            AREA DE COMENTARIOS - REMARKS                  *
+      * AUTHOR: LUCAS LRM                                         *
+      * DATA: 30/11/2020                                          *
+      * DESCRICAO: DESAFIO DO DANTE                               *
+      * DICA: EVITAR USAR EVALUATE - PROCESSAMENTO PESA MAIS      *
+      * ATUALIZACAO: LINHA MAX COLUNA 72                          *
+      * ATUALIZACAO: FALHAR LINHA COLUNA MIN 12                   *
+      *************************************************************
        ENVIRONMENT DIVISION.
        CONFIGURATION SECTION.
        SPECIAL-NAMES.
