@@ -2217,6 +2217,7 @@ VALOR MES 12 = 000000,00
 - Caso o valor retornado seja igual a 22, será enviada para a tela uma mensagem de aviso ao usuário e um ACCEPT para segurar o processamento.
 
 ### FILE-STATUS
+
 - Valores possíveis de FILE-STATUS em arquivos COBOL.
 
 | Código |                     Status                          |                           
