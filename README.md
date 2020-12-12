@@ -11,22 +11,6 @@
 > Grace Murray Hopper foi almirante e, Analista de Sistemas da Marinha dos Estados Unidos nas décadas de 1940 e 1950, criadora da linguagem de programação de alto nível Flow-Matic — base para a criação do COBOL — e uma das primeiras programadoras do computador Harvard Mark I em 1944.
 
 <details>
-    <summary>Aprenda a Programar em COBOL: Passo a Passo do 0 ao Profissional</summary>
-  
-### Condev
-http://condev.com.br/
-
-### Gráfico
-http://fingfx.thomsonreuters.com/gfx/rngs/USA-BANKS-COBOL/010040KH18J/index.html
-
-### Open Cobol IDE
-https://sourceforge.net/projects/cobol/files/
-
-### Micro Focus Visual COBOL Personal Edition
-https://www.microfocus.com/
-
-</details>
-<details>
     <summary>Cobol: Primeiros Passos</summary>
   
 ## Estrutura da Linguagem
@@ -3371,5 +3355,22 @@ MOVE 0 TO WS-DIA
 <pre>
 GOBACK.
 </pre>
+
+</details>
+
+<details>
+    <summary>Aprenda a Programar em COBOL: Passo a Passo do 0 ao Profissional</summary>
+  
+### Condev
+http://condev.com.br/
+
+### Gráfico
+http://fingfx.thomsonreuters.com/gfx/rngs/USA-BANKS-COBOL/010040KH18J/index.html
+
+### Open Cobol IDE
+https://sourceforge.net/projects/cobol/files/
+
+### Micro Focus Visual COBOL Personal Edition
+https://www.microfocus.com/
 
 </details>
