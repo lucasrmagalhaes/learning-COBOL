@@ -3446,14 +3446,14 @@ https://www.microfocus.com/
                <TABLE width=100%>
                    <TR>
                       <TD class=titulocampo>
-                           <CENTER>Aula 2</CENTER>
+                           <CENTER>Aula 2 </CENTER>
                       <TR>
                       <TD>
                            <TABLE rules=none 
                                   width=100% 
                                   border=1
                                   cellspacing=1 
-                                  cellpading=0 
+                                  cellpadding=0
                                   bordercolor=White 
                                   bordercolordark=White 
                                   bordercolorlight=DimGray 
