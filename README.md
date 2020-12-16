@@ -3442,7 +3442,7 @@ https://www.microfocus.com/
   ### 3. Criando campos no formulário HTML
   
   <pre>
-        *================ Compilando um Programa com Diretiva
+      *================ Compilando um Programa com Diretiva
       $set preprocess (htmlpp) endp
       $set sourceformart"free" 	
       *======================================================
@@ -3508,10 +3508,17 @@ https://www.microfocus.com/
                    <TR>
                       <TD class=titulocampo><CENTER>Aula 2</CENTER></TR>
                       <TD>
-                           <TABLE rules=none width=100% border=1 cellspacing=1 cellpading=0 bordercolor=White bordercolordark=White bordercolorlight=DimGray 
+                           <TABLE rules=none 
+                                  width=100% 
+                                  border=1
+                                  cellspacing=1 
+                                  cellpading=0 
+                                  bordercolor=White 
+                                  bordercolordark=White 
+                                  bordercolorlight=DimGray 
                                   class=WindoScreen>
                                <TR>
-                                   <TD colspan=4>&nbsp;<TD>
+                                   <TD colspan=4>&nbsp;</TD>
                                <TR>
                                    <TD width=20% class=titulocampo>Código&nbsp;</TD>
                                    <TD colspan=3><INPUT class="campo" 
