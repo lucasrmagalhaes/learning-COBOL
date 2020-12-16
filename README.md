@@ -3374,3 +3374,69 @@ https://sourceforge.net/projects/cobol/files/
 https://www.microfocus.com/
 
 </details>
+
+<details>
+    <summary>Aprenda Cobol Web</summary>
+  
+  ### 1. Introdução: Porque utilizar o COBOL
+  
+  - Criando um simples Sistema de Cadastro com HTML e JavaScript.
+  - 60 por cento de todas as linhas de programação no mundo são construídas em COBOL.
+  
+  ### 2. Estruturas de um programa Cobol Web
+  
+  <pre>
+        *================ Compilando um Programa com Diretiva
+      $set preprocess (htmlpp) endp
+      $set sourceformart"free" 	
+      *======================================================
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. Aula1.
+      *=================== Funcionalidades do Ambiente
+       ENVIRONMENT DIVISION.
+       SPECIAL-NAMES. DECIMAL-POINT IS COMMA.
+      *===================  Estruturas do Código Fonte
+       DATA DIVISION.
+      *===================  Variáveis
+       WORKING-STORAGE SECTION.
+      *===================  Execuções
+       PROCEDURE DIVISION.
+      *=======================================================
+       0000-CONTROLE SECTION.
+       0000.
+            PERFORM 1000-INICIALIZACAO
+            PERFORM 2000-PROCESSAMENTO
+            PERFORM 3000-FINALIZACAO.
+       0000-SAIDA.
+            EXIT PROGRAM
+            STOP RUN.
+      *=======================================================
+       1000-INICIALIZACAO SECTION.
+       1000.
+
+       1000-EXIT.
+            EXIT.
+      *=======================================================
+       2000-PROCESSAMENTO SECTION.
+       2000.
+            PERFORM 2100-CARREGA-TELA.
+       2000-EXIT.
+            EXIT.
+      *=======================================================
+       2100-CARREGA-TELA SECTION.
+       2100.
+            EXEC HTML
+               <html>
+                   Curso COBOL WEB
+               </html>
+            END-EXEC.
+       2000-EXIT.
+            EXIT.
+      *=======================================================
+       3000-FINALIZACAO SECTION.
+       3000.
+       3000-EXIT.
+            EXIT.
+  </pre>
+  
+</details>
