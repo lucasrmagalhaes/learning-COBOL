@@ -3439,4 +3439,101 @@ https://www.microfocus.com/
             EXIT.
   </pre>
   
+  ### 3. Criando campos no formulário HTML
+  
+  <pre>
+        *================ Compilando um Programa com Diretiva
+      $set preprocess (htmlpp) endp
+      $set sourceformart"free" 	
+      *======================================================
+       IDENTIFICATION DIVISION.
+       PROGRAM-ID. Aula2.
+      *=================== Funcionalidades do Ambiente
+       ENVIRONMENT DIVISION.
+       SPECIAL-NAMES. DECIMAL-POINT IS COMMA.
+      *===================  Estruturas do Código Fonte
+       DATA DIVISION.
+      *===================  Variáveis
+       WORKING-STORAGE SECTION.
+       01  CGI-INPUT IS EXTERNAL-FORM.
+           03 F-CAMPOS-FORMULARIO.
+               05 F-CD-CODIGO        PIC 9(07) IDENTIFIED BY "cdCodigo".
+               05 F-NM-NOME          PIC X(30) IDENTIFIED BY "nmNome".
+      *===================  Execuções
+       PROCEDURE DIVISION.
+      *=======================================================
+       0000-CONTROLE SECTION.
+       0000.
+            PERFORM 1000-INICIALIZACAO
+            PERFORM 2000-PROCESSAMENTO
+            PERFORM 3000-FINALIZACAO.
+
+       0000-SAIDA.
+            EXIT PROGRAM
+            STOP RUN.
+      *=======================================================
+       1000-INICIALIZACAO SECTION.
+       1000.
+           MOVE SPACES         TO  CGI-INPUT
+           INITIALIZE              CGI-INPUT
+           ACCEPT                  CGI-INPUT.
+
+       1000-EXIT.
+            EXIT.
+      *=======================================================
+       2000-PROCESSAMENTO SECTION.
+       2000.
+            PERFORM 2100-CARREGA-TELA.
+
+       2000-EXIT.
+            EXIT.
+      *=======================================================
+       2100-CARREGA-TELA SECTION.
+       2100.
+            PERFORM 8000-TELA.
+
+       2100-EXIT.
+            EXIT.
+      *=======================================================
+       3000-FINALIZACAO SECTION.
+       3000.
+
+       3000-EXIT.
+            EXIT.
+      *=======================================================
+       8000-TELA SECTION.
+       8000.
+            EXEC HTML
+               <TABLE width=100%>
+                   <TR>
+                      <TD class=titulocampo><CENTER>Aula 2</CENTER></TR>
+                      <TD>
+                           <TABLE rules=none width=100% border=1 cellspacing=1 cellpading=0 bordercolor=White bordercolordark=White bordercolorlight=DimGray 
+                                  class=WindoScreen>
+                               <TR>
+                                   <TD colspan=4>&nbsp;<TD>
+                               <TR>
+                                   <TD width=20% class=titulocampo>Código&nbsp;</TD>
+                                   <TD colspan=3><INPUT class="campo" 
+                                                        name=cdCodigo 
+                                                        tabindex=1 
+                                                        size=07 
+                                                        maxlength=7
+                                   </TD>
+                               <TR>
+                                   <TD class=titulocampo>Nome&nbsp;</TD>
+                                   <TD colspan=3><INPUT class="campo" 
+                                                        name=cdCodigo 
+                                                        tabindex=2 
+                                                        size=40 
+                                                        maxlength=40
+                                   </TD>
+                           </TABLE></TD>
+               </TABLE>
+            END-EXEC.
+
+       8000-EXIT.
+            EXIT.
+  </pre>
+  
 </details>
