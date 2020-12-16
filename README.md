@@ -3481,4 +3481,16 @@ https://www.microfocus.com/
             END-EXEC.
   </pre>
   
+  ### 4. Integração entre o formulário HTML e o COBOL
+  
+  ### 5. Criando campos no formulário HTML
+  
+  ### 6. Criando campos no formulário HTML
+  
+  ### 7. Criando campos no formulário HTML
+  
+  ### 8. Criando campos no formulário HTML
+  
+  ### 9. Criando campos no formulário HTML
+  
 </details>
