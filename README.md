@@ -4133,7 +4133,7 @@ https://www.microfocus.com/
             EXIT.
   </pre>
   
-  ### <a href="#">3. Criando campos no formulário HTML</a>
+  ### <a href="https://github.com/lucasrmagalhaes/learning-COBOL/blob/main/cob/Aprenda%20Cobol%20Web/CRIANDOCAMPOSFORMULARIOHTML.cob">3. Criando campos no formulário HTML</a>
   
   ### 4. Integração entre o formulário HTML e o COBOL
   
