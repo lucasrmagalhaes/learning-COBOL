@@ -4135,7 +4135,7 @@ https://www.microfocus.com/
   
   ### 3. Criando campos no formulário HTML
 
-``cobol
+<pre>
            EXEC HTML
                <TABLE width=100%>
                    <TR>
@@ -4180,7 +4180,7 @@ https://www.microfocus.com/
                       </TD>
                </TABLE>
            END-EXEC.
-``
+</pre>
   
   ### 4. Integração entre o formulário HTML e o COBOL
   
